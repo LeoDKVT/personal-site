@@ -1,0 +1,10 @@
+@import 'variaveis-mixins';
+@import 'reset';
+
+@import 'barra-navegador';
+
+//conteudo geral do site: corpo | cabeçalho | seção | rodapé.
+@import 'boby-port';
+@import 'header';
+@import 'section-port.scss';
+@import 'footer';

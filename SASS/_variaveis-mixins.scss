@@ -1,0 +1,19 @@
+$roxo: #63084D;
+$preto: #000;
+$branco: #fff;
+$cinza: #A8A8A8;
+$font-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@mixin type-1 ($tamanho) {
+    font-family: $font-padrao;
+    @if $tamanho == pequena {
+        font-size: 1.1em;
+    } 
+    @else if $tamanho == media {
+        font-size: 1.56em;
+        line-height: 2em;
+    }
+    @else if $tamanho == grande {
+        font-size: 2.5em;
+    }
+}

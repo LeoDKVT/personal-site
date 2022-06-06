@@ -1,0 +1,11 @@
+@import 'variaveis-mixins';
+@import "reset";
+
+//Barra de vavegação do site modificado.
+@import "barra-navegador";
+
+//conteudo geral do site: corpo | cabeçalho | seção | rodapé.
+@import 'boby';
+@import 'header';
+@import 'section';
+@import 'footer';

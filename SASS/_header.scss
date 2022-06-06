@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $preto;
+    color: $branco;
+    height: 70px;
+    text-transform: uppercase;
+    font-size: 0.6em;
+
+    p {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .logo-name img {
+        margin-top: 10px;
+        width: 60px;
+    }
+    .logo-name {
+        display: flex;
+    }
+    .logo-name h1, .port-menu {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .logo-name a, .port-menu a {
+        color: $branco;
+    }
+    .logo-name a:hover, .port-menu a:hover {
+        color: $roxo;
+        transition-duration: 0.3s;
+    }
+}
+
+

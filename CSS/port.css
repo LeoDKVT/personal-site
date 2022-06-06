@@ -6,14 +6,25 @@
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #63084D;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #63084D;
+}
+
 body {
   background-color: #000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../IMG/Galaxia.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../IMG/fundo.png);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
 }
 
 header {
@@ -53,6 +64,98 @@ header .logo-name a, header .port-menu a {
 header .logo-name a:hover, header .port-menu a:hover {
   color: #63084D;
   transition-duration: 0.3s;
+}
+
+.msg {
+  width: 170px;
+  animation: digitando 2.5s steps(25), blink 0.4s infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes digitando {
+  from {
+    width: 0px;
+  }
+}
+
+@keyframes blink {
+  60% {
+    border-color: #63084D;
+  }
+}
+
+section {
+  margin: auto;
+  padding: 50px 10px;
+  max-width: 850px;
+}
+
+section p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+}
+
+.port h1 {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5em;
+}
+
+.ano {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: #63084D;
+  height: 55px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.56em;
+  line-height: 2em;
+  margin: 40px 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/fundo.png);
+}
+
+/*Sites*/
+.site {
+  max-width: 600px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #212121;
+}
+
+.site h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.56em;
+  line-height: 2em;
+}
+
+.site p {
+  padding: 10px 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+}
+
+.site h2:hover, .site p:hover {
+  color: #A8A8A8;
+}
+
+.site a {
+  color: #fff;
+}
+
+/*tecnologia*/
+.tecnologia {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tecnologia span {
+  background-color: #63084D;
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-weight: lighter;
+  margin: 5px 5px 5px 0px;
 }
 
 .redesocial {

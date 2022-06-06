@@ -1,0 +1,28 @@
+//footer
+.redesocial {
+    text-align: center;
+    margin-bottom: 20px;
+    a {
+        margin: 0px 10px;
+    }
+    i {
+        color: $roxo;
+        font-size: 30px;
+        transition-duration: 0.3s;
+    }
+    #gmail i:hover {
+        color: #c71610;
+    }
+    #linkedin i:hover {
+        color: #0e76a8;
+    }
+    #github i:hover {
+        color: $branco;
+    }
+    #whatsapp i:hover {
+        color: #25D366;
+    }
+    #instagram i:hover {
+        color: #F56040;
+    }
+}

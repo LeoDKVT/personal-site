@@ -1,0 +1,24 @@
+section {
+    max-width: 850px;
+    margin: auto;
+    padding: 50px 10px;
+    h1 {
+        color: $cinza;
+        @include type-1(grande);
+    }
+    p {
+        color: $cinza;
+        margin-top: 40px;
+        @include type-1(media);
+    }
+    strong {
+        color: $branco;
+    }
+    a {
+        color: $branco;
+        transition-duration: 0.3s;
+        &:hover {
+            color: $roxo;
+        }
+    }
+}
