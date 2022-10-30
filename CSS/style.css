@@ -1,11 +1,20 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  box-sizing: border-box;
+.site h2:hover, .site p:hover {
+  color: #fff;
+}
+
+.site a {
+  color: #6c757d;
   text-decoration: none;
 }
 
+
+
+.dropdown-divider {
+  margin-top: 20px;
+  border-top: 1px solid #424141;
+}
+
+/*barra de navegação personalizada*/
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -20,100 +29,62 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #63084D;
 }
 
-body {
-  background-color: #000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../IMG/Galaxia.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/*degrade dos textos*/
+.degrade {
+  background-image: linear-gradient(to bottom, #ff0077, #692c7e);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #000;
-  color: #fff;
-  height: 70px;
-  text-transform: uppercase;
-  font-size: 0.6em;
+.degrade1 {
+  background-image: linear-gradient(#fcb045, #63084D);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-header p {
-  font-size: 2em;
-  font-weight: bold;
+/*texto digitando do arquivo portfolio.html*/
+.msg {
+  width: 280px;
+  animation: digitando 2.5s steps(25), blink 0.4s infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 }
 
-header .logo-name img {
-  margin-top: 10px;
-  width: 60px;
+@keyframes digitando {
+  from {
+    width: 0px;
+  }
 }
 
-header .logo-name {
-  display: flex;
+@keyframes blink {
+  50% {
+    border-color: #9c6a24;
+  }
 }
 
-header .logo-name h1, header .port-menu {
-  padding-top: 20px;
-  padding-left: 20px;
+/*ano fixo do arquivo portfolio.html*/
+.ano {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 54px;
+  margin: 40px 0px;
+  background-color: #000000;
 }
 
-header .logo-name a, header .port-menu a {
-  color: #fff;
-}
-
-header .logo-name a:hover, header .port-menu a:hover {
-  color: #63084D;
-  transition-duration: 0.3s;
-}
-
-section {
-  max-width: 850px;
-  margin: auto;
-  padding: 50px 10px;
-}
-
-section h1 {
-  color: #A8A8A8;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.5em;
-}
-
-section p {
-  color: #A8A8A8;
-  margin-top: 40px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.56em;
-  line-height: 2em;
-}
-
-section strong {
-  color: #fff;
-}
-
-section a {
-  color: #fff;
-  transition-duration: 0.3s;
-}
-
-section a:hover {
-  color: #63084D;
-}
-
-.redesocial {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
+/*footer do site*/
 .redesocial a {
-  margin: 0px 10px;
+  margin-right: 20px;
 }
 
 .redesocial i {
   color: #63084D;
-  font-size: 30px;
+  font-size: 40px;
   transition-duration: 0.3s;
 }
 
@@ -131,8 +102,4 @@ section a:hover {
 
 .redesocial #whatsapp i:hover {
   color: #25D366;
-}
-
-.redesocial #instagram i:hover {
-  color: #F56040;
 }
