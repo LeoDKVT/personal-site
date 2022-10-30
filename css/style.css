@@ -1,25 +1,3 @@
-.site h2:hover, .site p:hover {
-  color: #fff;
-}
-
-.site a {
-  color: #6c757d;
-  text-decoration: none;
-}
-
-
-
-.dropdown-divider {
-  margin-top: 20px;
-  border-top: 1px solid #424141;
-}
-
-#bg-quote {
-  background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.8)), url(../img/coding.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-
 /*barra de navegação personalizada*/
 body::-webkit-scrollbar {
   width: 12px;
@@ -52,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-fill-color: transparent;
 }
 
-/*texto digitando do arquivo portfolio.html*/
+/*texto digitando do arquivo "portfolio.html" e "contato.html"*/
 .msg {
   width: 280px;
   animation: digitando 2.5s steps(25), blink 0.4s infinite alternate;
@@ -83,6 +61,22 @@ body::-webkit-scrollbar-thumb {
   background-color: #000000;
 }
 
+/*dropdown do arquivo portfolio.html*/
+.dropdown-divider {
+  margin-top: 20px;
+  border-top: 1px solid #424141;
+}
+
+/*cores do titulo e texto dos projetos realizado do arquivo portfolio.html*/
+.site h2:hover, .site p:hover {
+  color: #fff;
+}
+
+.site a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
 /*footer do site*/
 .redesocial a {
   margin-right: 20px;
@@ -108,4 +102,11 @@ body::-webkit-scrollbar-thumb {
 
 .redesocial #whatsapp i:hover {
   color: #25D366;
+}
+
+/*foto de fundo da pagina contato.html*/
+#bg-quote {
+  background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.8)), url(../img/coding1.svg);
+  background-position: center center;
+  background-size: cover;
 }
