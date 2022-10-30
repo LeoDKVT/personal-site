@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb {
 
 /*foto de fundo da pagina contato.html*/
 #bg-quote {
-  background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.8)), url(../img/coding1.svg);
+  background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.8)), url(../img/coding.svg);
   background-position: center center;
   background-size: cover;
 }
