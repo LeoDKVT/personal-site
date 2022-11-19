@@ -68,7 +68,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*cores do titulo e texto dos projetos realizado do arquivo portfolio.html*/
-.site h2:hover, .site p:hover {
+.site h2:hover,
+.site p:hover {
   color: #fff;
 }
 
@@ -106,7 +107,7 @@ body::-webkit-scrollbar-thumb {
 
 /*foto de fundo da pagina contato.html*/
 #bg-quote {
-  background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.8)), url(../img/coding.svg);
+  background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)), url(../img/coding.svg);
   background-position: center center;
   background-size: cover;
 }
