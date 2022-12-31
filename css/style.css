@@ -70,11 +70,11 @@ body::-webkit-scrollbar-thumb {
 /*cores do titulo e texto dos projetos realizado do arquivo portfolio.html*/
 .site h2:hover,
 .site p:hover {
-  color: #fff;
+  color: #bcbcbc;
 }
 
 .site a {
-  color: #6c757d;
+  color: #ffffff;
   text-decoration: none;
 }
 
