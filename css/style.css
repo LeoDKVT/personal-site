@@ -73,6 +73,17 @@ body::-webkit-scrollbar-thumb {
   color: #bcbcbc;
 }
 
+/*Configuração personalizada nos card usado no blog.html*/
+.libary .card{
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.libary .card:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(58, 58, 58, 0.411) 0px 6px 10px;
+
+}
+
 .site a {
   color: #ffffff;
   text-decoration: none;
