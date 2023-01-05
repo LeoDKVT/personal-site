@@ -78,6 +78,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
 .libary .card:hover{
   transform: scale(1.1);
   box-shadow: rgba(58, 58, 58, 0.411) 0px 6px 10px;
@@ -91,6 +92,7 @@ body::-webkit-scrollbar-thumb {
 
 /*footer do site*/
 .redesocial a {
+  text-decoration: none;
   margin-right: 20px;
 }
 
