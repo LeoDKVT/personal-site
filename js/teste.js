@@ -3,7 +3,7 @@ const requisicao = fetch("https://ranekapi.origamid.dev/json/api/produto")
         return response.json();
     })
     .then(jsonBody => {
-        document.getElementById('#app').innerHTML = jsonBody[0].nome;
+        //document.getElementById('#app').innerHTML = jsonBody[0].nome;
         console.log(jsonBody);
     });
 
