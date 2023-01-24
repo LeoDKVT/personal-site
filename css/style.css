@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
 
 /* texto digitando do arquivo "portfolio.html" */
 .msg {
-  width: 270px;
+  width: 255px;
   animation: digitando 2.5s steps(25), blink 0.4s infinite alternate;
   white-space: nowrap;
   overflow: hidden;
