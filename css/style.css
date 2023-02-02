@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-fill-color: transparent;
 }
 
-/* texto digitando do arquivo "portfolio.html" */
+/* texto digitando do arquivo "portfolio.html" 
 .msg {
   width: 255px;
   animation: digitando 2.5s steps(25), blink 0.4s infinite alternate;
@@ -56,6 +56,8 @@ body::-webkit-scrollbar-thumb {
     border-color: #63084D;
   }
 }
+
+*/
 
 /* ano fixo do arquivo portfolio.html */
 .ano {
