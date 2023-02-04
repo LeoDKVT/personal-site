@@ -30,35 +30,6 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-fill-color: transparent;
 }
 
-/* texto digitando do arquivo "portfolio.html" 
-.msg {
-  width: 255px;
-  animation: digitando 2.5s steps(25), blink 0.4s infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-}
-
-@media only screen and (max-width: 400px) {
-.msg {
-  width: 280px;
-  }  
-}
-
-@keyframes digitando {
-  from {
-    width: 0px;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: #63084D;
-  }
-}
-
-*/
-
 /* ano fixo do arquivo portfolio.html */
 .ano {
   position: sticky;
@@ -86,29 +57,30 @@ body::-webkit-scrollbar-thumb {
   border-top: 1px solid #424141;
 }
 
-/* texto com efeito neon no contato "contato.html" */
-.neon {
-  color: #ff0077a9;
-  animation: neon 2s infinite;
+/* texto digitando do arquivo "contato.html" */
+.msg {
+  width: 181px;
+  animation: digitando 2.0s steps(25), blink 0.5s infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 }
 
-@keyframes neon {
+@media only screen and (max-width: 400px) {
+.msg {
+  width: 280px;
+  }  
+}
 
-  0%,
-  39%,
-  41%,
-  59%,
-  61%,
-  100% {
-      text-shadow:
-          rgba(255, 255, 255, 0.027) 0 0 2px,
-          #692c7e 0 0 6px,
-          #692c7e 0 0 2px;
+@keyframes digitando {
+  from {
+    width: 0px;
   }
+}
 
-  40%,
-  60% {
-      text-shadow: none;
+@keyframes blink {
+  50% {
+    border-color: #63084D;
   }
 }
 
