@@ -13,6 +13,9 @@
     "smoky": #101010
  ) ;
 
+  /*Responsividade do texto*/
+  $enable-responsive-font-sizes:true;
+
 @import "functions";
 @import "variables";
 @import "mixins";
