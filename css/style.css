@@ -119,8 +119,6 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
 }
 
-
-
 pre {
   background-color: #101010;
   border: 1px solid #63084D;
@@ -133,7 +131,7 @@ pre {
 }
 
 .caixa {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
