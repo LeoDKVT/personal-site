@@ -40,6 +40,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #070707;
 }
 
+.font-ano {
+  font-size: 2.4em;
+}
+
 /* cores do titulo e texto dos projetos realizado do arquivo portfolio.html */
 .site a {
   color: #ffffff;
