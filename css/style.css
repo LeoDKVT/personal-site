@@ -90,6 +90,10 @@ body::-webkit-scrollbar-thumb {
   margin-right: 20px;
 }
 
+.redesocial #whatsapp {
+  margin-right: 0px;
+}
+
 .redesocial i {
   color: #63084D;
   font-size: 40px;
