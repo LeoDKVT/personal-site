@@ -65,11 +65,12 @@ body::-webkit-scrollbar-thumb {
 
 /* texto digitando do arquivo "contato.html" */
 .msg {
-  width: 181px;
+  width: 146px;
   animation: digitando 2.0s steps(25), blink 0.5s infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+  font-size: 2em;
 }
 
 @keyframes digitando {
