@@ -4,41 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-<!--
-    <meta
-      name="description"
-      content="Veja como incluir o sitemap.xml em seu site/blog para otimizar nos resultados de busca. Com objetivo de ajudar os mecanismos de busca, facilitando o acesso às suas páginas."
-    />
-    <meta
-      name="keywords"
-      content="Dicas de Seo, sitemap, sitemap.xml, XML-sitemaps, Google Search Console"
-    />
--->
-
-
-
+    <meta name="description" content="Descubra as teclas tag meta que são essenciais para melhorar o SEO do site e entenda os benefícios que elas podem trazer." />
+    <meta name="keywords" content="Dicas de Seo, description, keywords, Robots, meta tag"/>
     <meta name="author" content="José Leonardo" />
     <title>José Leonardo | Meta Tag</title>
-    <link
-      rel="shortcut icon"
-      href="../img/favicon-logo.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../img/favicon-logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X4SQFDLP60"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-X4SQFDLP60');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4SQFDLP60"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-X4SQFDLP60');
+  </script>
 
   <body class="bg-black">
     <header>
@@ -80,90 +62,58 @@
       </nav>
     </header>
 
-    <section class="m-2 text-center">
-      <h1 class="display-3 text-center degrade1 my-5">Descubra como as teclas meta podem influenciar o desempenho do SEO do site</h1>
-      <p class="text-white">Se você quer que seu site seja encontrado mais facilmente pelos mecanismos de busca, é importante usar meta tags em formato HTML. Dessa forma, é possível ter uma vantagem competitiva no ranking do Google e outros motores. Irei listar algumas tecla meta que são muito importantes no desenvolvimento web.</p>
-      <h2 class="degrade  pb-2">Tag meta description:</h2>
+    <section class="text-center text-white m-2">
+      <h1 class="display-3 degrade1 my-5">Descubra como as teclas meta podem influenciar o desempenho do SEO do site</h1>
+      <p>Se você quer que seu site seja encontrado mais facilmente pelos mecanismos de busca, é importante usar meta tags em formato HTML. Dessa forma, é possível ter uma vantagem competitiva no ranking do Google e outros motores. Irei listar algumas tecla meta que são muito importantes no desenvolvimento web.</p>
+      <h2 class="degrade mt-4 pb-2">Tag meta description:</h2>
       <div class="caixa">
         <pre>
           <code class="user-select-all">&lt;meta name="<span class="text-info">description</span>" content="<span class="text-info">Veja como incluir o sitemap.xml em seu site/blog para otimizar nos resultados de busca. Com objetivo de ajudar os mecanismos de busca, facilitando o acesso às suas páginas.</span>"&gt;</code>
         </pre>
       </div>
-      <p class="text-center text-white mb-3">A meta descrição é um texto que aparece nos resultados de busca do Google e tem como objetivo resumir o conteúdo da página. Ela deve ser clara e objetiva, recomenda-se no máximo 160 caracteres. Além disso, é importante que ela contenha as palavras-chave relacionadas ao conteúdo da página para ajudar no ranqueamento do site nos resultados de busca.</p>
-      <p class="texte text-white">Além disso, é importante que ela contenha as palavras-chave relacionadas ao conteúdo da página para ajudar no ranqueamento do site nos resultados de busca.</p>
-      <h2 class="degrade  py-2">Tag meta keywords:</h2>
+      <p class="mb-3">A meta descrição é um texto que aparece nos resultados de busca do Google e tem como objetivo resumir o conteúdo da página. Ela deve ser clara e objetiva, recomenda-se no máximo 160 caracteres. Além disso, é importante que ela contenha as palavras-chave relacionadas ao conteúdo da página para ajudar no ranqueamento do site nos resultados de busca.</p>
+      <h2 class="degrade mt-4 pb-2">Tag meta keywords:</h2>
       <div class="caixa">
         <pre>
           <code class="user-select-all">&lt;meta name="<span class="text-info">keywords</span>" content="<span class="text-info">desenvolvimento web, programação web, front-end, HTML, CSS, javascript, bootstrap, wordpress</span>"&gt;</code>
         </pre>
       </div>
-      <p class="text-white">A tag meta keywords é utilizada para descrever as palavras-chave da página. Separa-se cada palavra-chave através de uma vírgula. Esse tipo de meta tag deve ser bem definida, pois o seu mal uso, torna-o inutilizado.</p>
-      <h2 class="degrade  py-2">Tag meta robots:</h2>
+      <p>A tag meta keywords é utilizada para descrever as palavras-chave da página. Separa-se cada palavra-chave através de uma vírgula. Esse tipo de meta tag deve ser bem definida, pois o seu mal uso, torna-o inutilizado.</p>
+      <h2 class="degrade mt-4 pb-2">Tag meta robots:</h2>
       <div class="caixa">
         <pre>
           <code class="user-select-all">&lt;meta name="<span class="text-info">robots</span>" content="<span class="text-info">nofollow</span>"&gt;</code>
         </pre>
       </div>
-
-      <p class="text-white">A tag HTML Meta Robots é uma forma de regular como os motores de busca vasculham e indexam sua URL.</p>
-      <p class="text-white"><strong class="text-info">All:</strong> Valor default, Quando há um vazio, o robô de busca não consegue coletar informações. <strong class="text-info">Index:</strong> Os algoritmos de pesquisa têm permissão para indexar a página. <strong class="text-info">Follow:</strong> Os robôs podem indexar a página e ainda seguir os links para outras páginas que ela contém. <strong class="text-info">NoIndex:</strong> Os links podem ser seguidos, mas a página não é indexada. <strong class="text-info">NoFollow:</strong> A página é indexada, mas os links não são seguidos.</p>
-      <p class="font-italic text-muted mb-2">
-        Criado em 12 de Abril de 2023 <br />
-        por José Leonardo
-      </p>
-      <a href="../blog"
-        ><button type="button" class="btn text-white bg-roxo m-4">
-          Voltar ao Blog
-        </button></a
-      >
+      <p>A tag HTML Meta Robots é uma forma de regular como os motores de busca vasculham e indexam sua URL.</p>
+      <p><strong class="text-info">All:</strong> Valor default, Quando há um vazio, o robô de busca não consegue coletar informações. <strong class="text-info">Index:</strong> Os algoritmos de pesquisa têm permissão para indexar a página. <strong class="text-info">Follow:</strong> Os robôs podem indexar a página e ainda seguir os links para outras páginas que ela contém. <strong class="text-info">NoIndex:</strong> Os links podem ser seguidos, mas a página não é indexada. <strong class="text-info">NoFollow:</strong> A página é indexada, mas os links não são seguidos.</p>
+      <p>Por enquanto, isso é tudo. À medida que eu continuar estudando, adicionarei ainda mais conteúdo valioso🔥.</p>
+      <p class="font-italic text-muted mb-2">Criado em 12 de Abril de 2023 <br/>por José Leonardo</p>
+      <a href="../blog">
+        <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
+      </a>
     </section>
 
     <footer class="container text-center">
       <nav class="redesocial mb-3">
-        <a
-          id="gmail"
-          href="mailto:leodkvt@gmail.com"
-          target="blank"
-          aria-label="link do meu e-mail para contato"
-        >
+        <a id="gmail" href="mailto:leodkvt@gmail.com" target="blank" aria-label="link do meu e-mail para contato">
           <i class="fa-regular fa-envelope"></i>
         </a>
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/"
-          target="blank"
-          aria-label="link do meu Linkedin "
-        >
+        <a id="linkedin" href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/" target="blank" aria-label="link do meu Linkedin ">
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
-        <a
-          id="github"
-          href="https://github.com/LeoDKVT"
-          target="blank"
-          aria-label="link do meu Github"
-        >
+        <a id="github" href="https://github.com/LeoDKVT" target="blank" aria-label="link do meu Github">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a
-          id="whatsapp"
-          href="https://api.whatsapp.com/send?phone=5511939275748"
-          target="blank"
-          aria-label="link do meu Whatsapp para contato"
-        >
+        <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5511939275748" target="blank" aria-label="link do meu Whatsapp para contato">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
       </nav>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/abaa1d2832.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../js/jquery-3.2.1.slim.min.js"
-    ></script>
-    <script type="text/javascript" src="../js/popper.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
 </html>

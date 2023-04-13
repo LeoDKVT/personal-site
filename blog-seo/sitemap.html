@@ -23,15 +23,14 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X4SQFDLP60"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-X4SQFDLP60');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4SQFDLP60"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-X4SQFDLP60');
+  </script>
 
   <body class="bg-black">
     <header>
@@ -73,135 +72,72 @@
       </nav>
     </header>
 
-    <section class="m-2 text-center">
-      <h1 class="display-3 text-center degrade1 my-5">Sitemap</h1>
-      <p class="text-center text-white mb-3">
-        O arquivo <strong class="text-info">sitemap.xml</strong> é utilizado
-        para listar as páginas que queremos que sejam encontradas nos resultados
-        de busca de um site.
-      </p>
-      <p class="text-center text-white mb-3">
-        Sua função é servir como um guia para os buscadores, simplificando o
-        acesso a essas páginas e arquivos.
-      </p>
-      <p class="text-center text-white mb-3">
-        Se o seu site/blog utiliza a plataforma WordPress, basta instalar algum
-        desses plugins como o
+    <section class="text-center text-white m-2">
+      <h1 class="display-3 degrade1 my-5">Sitemap</h1>
+      <p>O arquivo 
+        <strong class="text-info">sitemap.xml</strong> é utilizado para listar as páginas que queremos que sejam encontradas nos resultados de busca de um site.</p>
+      <p>Sua função é servir como um guia para os buscadores, simplificando o acesso a essas páginas e arquivos.</p>
+      <p>Se o seu site/blog utiliza a plataforma WordPress, basta instalar algum desses plugins como o
         <strong class="text-info">Better WordPress</strong>,
         <strong class="text-info">Google XML Sitemaps</strong> ou o próprio
-        <strong class="text-info">Yoast SEO</strong>, que também possui uma
-        funcionalidade para gerar este tipo de arquivo.
+        <strong class="text-info">Yoast SEO</strong>, que também possui uma funcionalidade para gerar este tipo de arquivo.
       </p>
-      <p class="text-center text-white mb-3">
-        Nesse post irei ajudar a gerar esse arquivo
-        <strong class="text-info">.XML</strong> e adicionar ao site/blog sem o
-        uso de um CMS.
+      <p>Nesse post irei ajudar a gerar esse arquivo
+        <strong class="text-info">.XML</strong> e adicionar ao site/blog sem o uso de um CMS.
       </p>
-      <p class="text-center text-white mb-3">
-        O primeiro passo é gerar esse arquivo
-        <strong class="text-info">.XML</strong> e de forma gratuita é claro,
-        para isso existe esse site
-        <a href="https://www.xml-sitemaps.com/" target="blank"
-          ><strong>XML-sitemaps</strong></a
-        >
-        aonde precisa informar a <strong class="text-info">URL</strong> por
-        exemplo: <strong class="text-info">https://leodkvt.com.br</strong> e em
-        seguida clicar em "<strong class="text-info">start</strong>".
+      <p>O primeiro passo é gerar esse arquivo
+        <strong class="text-info">.XML</strong> e de forma gratuita é claro, para isso existe esse site
+        <a href="https://www.xml-sitemaps.com/" target="blank">
+          <strong>XML-sitemaps</strong>
+        </a>aonde precisa informar a <strong class="text-info">URL</strong> por exemplo:
+          <strong class="text-info">https://leodkvt.com.br</strong> e em seguida clicar em "
+          <strong class="text-info">start</strong>".
       </p>
-      <p class="text-center text-white mb-3">
-        Após o processamento, basta clicar em "<strong class="text-info"
-          >VIEW SITEMAP DETAILS</strong
-        >" e em "<strong class="text-info"
-          >DOWNLOAD YOUR XML SITEMAP FILE</strong
-        >" para baixar o arquivo.
+      <p>Após o processamento, basta clicar em "
+        <strong class="text-info">VIEW SITEMAP DETAILS</strong>" e em "
+        <strong class="text-info">DOWNLOAD YOUR XML SITEMAP FILE</strong>" para baixar o arquivo.
       </p>
-      <p class="text-center text-white mb-3">
-        O próximo passo será necessário adicionar esse arquivo cujo o nome é
-        <strong class="text-info">sitemap.xml</strong> na pasta raiz aonde o
-        site esteja hospedado.
+      <p>O próximo passo será necessário adicionar esse arquivo cujo o nome é
+        <strong class="text-info">sitemap.xml</strong> na pasta raiz aonde o site esteja hospedado.
       </p>
-      <p class="text-center text-white mb-3">
-        E por último é necessário acessar o site
-        <a
-          href="https://search.google.com/search-console/sitemaps"
-          target="blank"
-          ><strong>Google Search Console</strong></a
-        >
-        e na aba "<strong class="text-info">sitemaps</strong>" adicionar a
+      <p>E por último é necessário acessar o site
+        <a href="https://search.google.com/search-console/sitemaps" target="blank">
+        <strong>Google Search Console</strong>
+        </a>e na aba "<strong class="text-info">sitemaps</strong>" adicionar a
         <strong class="text-info">URL</strong> do arquivo por exemplo:
-        <strong class="text-info">https://leodkvt.com.br/sitemap.xml</strong> e
-        clicar em "<strong class="text-info">enviar</strong>".
+        <strong class="text-info">https://leodkvt.com.br/sitemap.xml</strong> e clicar em "
+        <strong class="text-info">enviar</strong>".
       </p>
-      <img
-        src="../blog-seo/img/google-search-console.png"
-        class="img-fluid rounded mb-3"
-        style="width: 1000px; min-height: 200px"
-        alt="Imagem de um print da tela do Google Search Console"
-      />
-      <p class="text-center text-white mb-3">
-        Após seguir rigorosamente todas as orientações, ao clicar no botão
-        enviar, você notará que o status "<strong class="text-info"
-          >processado</strong
-        >" será exibido na imagem exemplificada. Isso significa que a
-        configuração do sitemap foi realizada corretamente 😜.
+      <img src="../blog-seo/img/google-search-console.png" class="img-fluid rounded mb-3" style="width: 1000px; min-height: 200px" alt="Imagem de um print da tela do Google Search Console"/>
+      <p>Após seguir rigorosamente todas as orientações, ao clicar no botão enviar, você notará que o status "
+        <strong class="text-info">processado</strong>" será exibido na imagem exemplificada. Isso significa que a configuração do sitemap foi realizada corretamente 😜.
       </p>
-      <p class="font-italic text-muted mb-2">
-        Criado em 09 de Abril de 2023 <br />
-        por José Leonardo
-      </p>
-      <a href="../blog"
-        ><button type="button" class="btn text-white bg-roxo m-4">
-          Voltar ao Blog
-        </button></a
-      >
+      <p class="font-italic text-muted mb-2">Criado em 09 de Abril de 2023 <br/>por José Leonardo</p>
+      <a href="../blog">
+        <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
+      </a>
     </section>
 
     <footer class="container text-center">
       <nav class="redesocial mb-3">
-        <a
-          id="gmail"
-          href="mailto:leodkvt@gmail.com"
-          target="blank"
-          aria-label="link do meu e-mail para contato"
-        >
+        <a id="gmail" href="mailto:leodkvt@gmail.com" target="blank" aria-label="link do meu e-mail para contato">
           <i class="fa-regular fa-envelope"></i>
         </a>
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/"
-          target="blank"
-          aria-label="link do meu Linkedin "
-        >
+        <a id="linkedin" href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/" target="blank" aria-label="link do meu Linkedin ">
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
-        <a
-          id="github"
-          href="https://github.com/LeoDKVT"
-          target="blank"
-          aria-label="link do meu Github"
-        >
+        <a id="github" href="https://github.com/LeoDKVT" target="blank" aria-label="link do meu Github">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a
-          id="whatsapp"
-          href="https://api.whatsapp.com/send?phone=5511939275748"
-          target="blank"
-          aria-label="link do meu Whatsapp para contato"
-        >
+        <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5511939275748" target="blank" aria-label="link do meu Whatsapp para contato">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
       </nav>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/abaa1d2832.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../js/jquery-3.2.1.slim.min.js"
-    ></script>
-    <script type="text/javascript" src="../js/popper.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
 </html>
