@@ -156,3 +156,15 @@ pre {
 ::-webkit-scrollbar-thumb {
   background-color: #63084D;
 }
+
+
+#particles-js {
+  position: fixed;
+  margin-top: 90px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  z-index: -2;
+}
