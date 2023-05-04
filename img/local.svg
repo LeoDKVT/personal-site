@@ -1,10 +1,1 @@
-<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_125_45" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="124" height="125">
-<path d="M19.574 90.4833C8.714 93.8248 2 98.4402 2 103.539C2 113.736 28.862 122 62 122C95.138 122 122 113.736 122 103.539C122 98.4402 115.283 93.8248 104.426 90.4833" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M62 97.3846C62 97.3846 101 71.2431 101 41.0215C101 19.4708 83.54 2 62 2C40.46 2 23 19.4708 23 41.0215C23 71.2431 62 97.3846 62 97.3846Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
-<path d="M62 57.3846C65.9782 57.3846 69.7936 55.7637 72.6066 52.8785C75.4196 49.9934 77 46.0802 77 42C77 37.9197 75.4196 34.0066 72.6066 31.1214C69.7936 28.2362 65.9782 26.6154 62 26.6154C58.0218 26.6154 54.2064 28.2362 51.3934 31.1214C48.5804 34.0066 47 37.9197 47 42C47 46.0802 48.5804 49.9934 51.3934 52.8785C54.2064 55.7637 58.0218 57.3846 62 57.3846Z" fill="black" stroke="black" stroke-width="4" stroke-linejoin="round"/>
-</mask>
-<g mask="url(#mask0_125_45)">
-<path d="M-10 -10.3077H134V137.385H-10V-10.3077Z" fill="white"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" fill="none"><mask id="a" width="124" height="125" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19.574 90.483C8.714 93.825 2 98.44 2 103.54 2 113.736 28.862 122 62 122c33.138 0 60-8.264 60-18.461 0-5.099-6.717-9.714-17.574-13.056"/><path fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-width="4" d="M62 97.385s39-26.142 39-56.364C101 19.472 83.54 2 62 2S23 19.47 23 41.022c0 30.221 39 56.363 39 56.363Z"/><path fill="#000" stroke="#000" stroke-linejoin="round" stroke-width="4" d="M62 57.385c3.978 0 7.794-1.621 10.607-4.506C75.42 49.992 77 46.08 77 42c0-4.08-1.58-7.993-4.393-10.879-2.813-2.885-6.629-4.506-10.607-4.506-3.978 0-7.794 1.621-10.607 4.506C48.58 34.007 47 37.92 47 42c0 4.08 1.58 7.993 4.393 10.879 2.813 2.885 6.629 4.506 10.607 4.506Z"/></mask><g mask="url(#a)"><path fill="#fff" d="M-10-10.308h144v147.693H-10V-10.308Z"/></g></svg>
