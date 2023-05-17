@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Publique o seu projeto Vite e disponibilize-o de forma fácil e rápida no GitHub Pages." />
-    <meta name="keywords" content="deploy vite, react, github pages"/>
-    <meta name="author" content="José Leonardo" />
-    <title>José Leonardo | Deploy vite</title>
-    <link rel="shortcut icon" href="../img/favicon-logo.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Publique o seu projeto Vite e disponibilize-o de forma fácil e rápida no GitHub Pages." />
+  <meta name="keywords" content="deploy vite, react, github pages" />
+  <meta name="author" content="José Leonardo" />
+  <title>José Leonardo | Deploy vite</title>
+  <link rel="shortcut icon" href="../img/favicon-logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
 
 <!-- Google tag manager(gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X537NV62CX"></script>
@@ -22,53 +24,44 @@
   gtag('config', 'G-X537NV62CX');
 </script>
 
-  <body class="bg-black">
-    <header>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-smoky py-3 box-shadow">
-        <a class="navbar-brand" href="../">
-          <img
-            src="../img/leo-logo.svg"
-            style="width: 195px; height: 50px"
-            alt="José Leonardo Dev Front-end"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Abrir Navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../portfolio">Portfólio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="../blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<body class="bg-black">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-smoky py-3 box-shadow">
+      <a class="navbar-brand" href="../">
+        <img src="../img/leo-logo.svg" style="width: 195px; height: 50px" alt="José Leonardo Dev Front-end" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../portfolio">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <section class="text-center text-white m-2">
-      <h1 class="display-3 degrade1 my-5 pb-1">Publique seu projeto React no Github Pages utilizando Vite</h1>
-      
-      <h2 class="degrade mt-4 pb-2">Iniciando o deploy com o github pages</h2>
-      <p>No arquivo “<strong class="text-info">vite.config.js</strong>” adicionar o comando “<strong class="text-info">base</strong>” de acordo com o nome do seu <strong>repositório</strong> do github por exemplo: “<strong class="text-info">https://github.com/LeoDKVT/gpt-page</strong>”.</p>
-      <div class="caixa">
-        <pre class="sombra">
+  <section class="text-center text-white m-2">
+    <h1 class="display-3 degrade1 my-5 pb-1">Publique seu projeto React no Github Pages utilizando Vite</h1>
+
+    <h2 class="degrade mt-4 pb-2">Iniciando o deploy com o github pages</h2>
+    <p>No arquivo “<strong class="text-info">vite.config.js</strong>” adicionar o comando “<strong
+        class="text-info">base</strong>” de acordo com o nome do seu <strong>repositório</strong> do github por exemplo:
+      “<strong class="text-info">https://github.com/LeoDKVT/gpt-page</strong>”.</p>
+    <div class="caixa">
+      <pre class="sombra">
           <code class="user-select-all">  <span class="text-violet">import</span> { <span class="text-primary">defineConfig</span> } <span class="text-violet">from</span> <span class="text-orange">"vite"</span>;
             <span class="text-violet">import</span> <span class="text-primary">react</span> <span class="text-violet">from</span> <span class="text-orange">"@vitejs/plugin-react"</span>;
 
@@ -78,13 +71,17 @@
               <span class="text-primary">base:</span> <span class="text-orange">"/gpt-page/"</span>,
             });</code>
         </pre>
-      </div>
-      <p>Feito isso, basta subir seu projeto para o github caso você tenha feito localmente.</p>
-      <p>No seu repositório do github, iremos em <strong class="text-info">settings</strong> →  <strong class="text-info">pages</strong> → “<strong class="text-info">Build and deployment</strong>” trocar para “<strong class="text-info">github actions</strong>” e na pasta “<strong class="text-info">Static HTML</strong>” colar o arquivo “<strong class="text-info">yml</strong>” da documentação Vite.</p>
-      <p>Segue o link da documentação contendo o código yml: <a href="https://vitejs.dev/guide/static-deploy.html" rel="nofollow" target="_blank">https://vitejs.dev/guide/static-deploy.html</a> </p>
-      <p>Código yml:</p>
-      <div class="caixa">
-        <pre class="sombra" style="height: 240px;">
+    </div>
+    <p>Feito isso, basta subir seu projeto para o github caso você tenha feito localmente.</p>
+    <p>No seu repositório do github, iremos em <strong class="text-info">settings</strong> → <strong
+        class="text-info">pages</strong> → “<strong class="text-info">Build and deployment</strong>” trocar para
+      “<strong class="text-info">github actions</strong>” e na pasta “<strong class="text-info">Static HTML</strong>”
+      colar o arquivo “<strong class="text-info">yml</strong>” da documentação Vite.</p>
+    <p>Segue o link da documentação contendo o código yml: <a href="https://vitejs.dev/guide/static-deploy.html"
+        rel="nofollow" target="_blank">https://vitejs.dev/guide/static-deploy.html</a> </p>
+    <p>Código yml:</p>
+    <div class="caixa">
+      <pre class="sombra" style="height: 240px;">
           <code class="user-select-all" ># Simple workflow for deploying static content to GitHub Pages
           name: Deploy static content to Pages
 
@@ -138,56 +135,67 @@
                   uses: actions/deploy-pages@v1
           </code>
         </pre>
-      </div>
-      <p>Após colar esse arquivo, basta clicar em “<strong class="text-info">commit changes</strong>”, será criado um arquivo chamado "<strong class="text-info">static.yml</strong>" graças a ele será possivel gerar o link https do github pages.</p>
-      <p>Para observar o layout das pastas no repositório, <a href="https://github.com/LeoDKVT/gpt-page" rel="nofollow" target="_blank">clique aqui.</a></p>
-      <h3 class="degrade mt-4 pb-2">Qual vantagem tem fazendo o deploy dessa forma?</h3>
-      <p>Empregar este método de implantação específico apresenta uma variedade de vantagens importantes, já que ele é muito simples e não requer a instalação de qualquer dependência como o "npm gh-pages".</p>
-      <br>
-      <h3 class="degrade mt-4 pb-2">Qual é o processo para atualizar o aplicativo depois de ser modificado?</h3>
-      <p>O Github atualizará automaticamente o projeto assim que ele for carregado. Para verificar o processo, acesse "actions" e confira o commit e o status. Mas fique atento: se houver algum erro de código, o projeto não funcionará.</p>
-      <h3 class="degrade mt-4 pb-2">Dica:</h3>
-      <p>Caso você seja novato em React e esteja buscando aprender a fazer o deploy, aconselho começar um projeto Vite do zero e testá-lo para garantir que nenhum erro afete a estrutura básica. Assim, você poderá praticar de um jeito seguro e eficaz.</p>
-      <h3 class="degrade mt-4 pb-2">Comandos úteis:</h3>
-      <p>Ao acionar este comando, um arquivo chamado "dist" será criado como a página estática.</p>
-      <div class="caixa">
-        <pre class="sombra">
+    </div>
+    <p>Após colar esse arquivo, basta clicar em “<strong class="text-info">commit changes</strong>”, será criado um
+      arquivo chamado "<strong class="text-info">static.yml</strong>" graças a ele será possivel gerar o link https do
+      github pages.</p>
+    <p>Para observar o layout das pastas no repositório, <a href="https://github.com/LeoDKVT/gpt-page" rel="nofollow"
+        target="_blank">clique aqui.</a></p>
+    <h3 class="degrade mt-4 pb-2">Qual vantagem tem fazendo o deploy dessa forma?</h3>
+    <p>Empregar este método de implantação específico apresenta uma variedade de vantagens importantes, já que ele é
+      muito simples e não requer a instalação de qualquer dependência como o "npm gh-pages".</p>
+    <br>
+    <h3 class="degrade mt-4 pb-2">Qual é o processo para atualizar o aplicativo depois de ser modificado?</h3>
+    <p>O Github atualizará automaticamente o projeto assim que ele for carregado. Para verificar o processo, acesse
+      "actions" e confira o commit e o status. Mas fique atento: se houver algum erro de código, o projeto não
+      funcionará.</p>
+    <h3 class="degrade mt-4 pb-2">Dica:</h3>
+    <p>Caso você seja novato em React e esteja buscando aprender a fazer o deploy, aconselho começar um projeto Vite do
+      zero e testá-lo para garantir que nenhum erro afete a estrutura básica. Assim, você poderá praticar de um jeito
+      seguro e eficaz.</p>
+    <h3 class="degrade mt-4 pb-2">Comandos úteis:</h3>
+    <p>Ao acionar este comando, um arquivo chamado "dist" será criado como a página estática.</p>
+    <div class="caixa">
+      <pre class="sombra">
           <code class="user-select-all"><span class="text-info">npm</span> run build </code>
         </pre>
-      </div>
-      <p>E para ver essa página estática basta rodar esse comando para ver esse projeto em produção:</p>
-      <div class="caixa">
-        <pre class="sombra">
+    </div>
+    <p>E para ver essa página estática basta rodar esse comando para ver esse projeto em produção:</p>
+    <div class="caixa">
+      <pre class="sombra">
           <code class="user-select-all"><span class="text-info">npm</span> run preview </code>
         </pre>
-      </div>
-      
-      <p class="font-italic text-muted mb-2">Criado em 04 de Maio de 2023 <br/>por José Leonardo</p>
-      <a href="../blog">
-        <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
+    </div>
+
+    <p class="font-italic text-muted mb-2">Criado em 04 de Maio de 2023 <br />por José Leonardo</p>
+    <a href="../blog">
+      <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
+    </a>
+  </section>
+
+  <footer class="container text-center">
+    <nav class="redesocial mb-3">
+      <a id="gmail" href="mailto:leodkvt@gmail.com" target="blank" aria-label="link do meu e-mail para contato">
+        <i class="fa-regular fa-envelope"></i>
       </a>
-    </section>
+      <a id="linkedin" href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/" rel="nofollow" target="blank"
+        aria-label="link do meu Linkedin ">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a id="github" href="https://github.com/LeoDKVT" target="blank" aria-label="link do meu Github">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5511939275748" target="blank"
+        aria-label="link do meu Whatsapp para contato">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </nav>
+  </footer>
 
-    <footer class="container text-center">
-      <nav class="redesocial mb-3">
-        <a id="gmail" href="mailto:leodkvt@gmail.com" target="blank" aria-label="link do meu e-mail para contato">
-          <i class="fa-regular fa-envelope"></i>
-        </a>
-        <a id="linkedin" href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/" rel="nofollow" target="blank" aria-label="link do meu Linkedin ">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a id="github" href="https://github.com/LeoDKVT" target="blank" aria-label="link do meu Github">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5511939275748" target="blank" aria-label="link do meu Whatsapp para contato">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-      </nav>
-    </footer>
+  <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+</body>
 
-    <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
-    <script type="text/javascript" src="../js/popper.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
-  </body>
 </html>
