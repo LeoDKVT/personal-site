@@ -1,0 +1,5 @@
+# Permitir que um diretório específico seja acessado por todos os robôs:
+User-Agent: *
+Allow: /
+
+Sitemap: https://leodkvt.com.br/sitemap.xml
