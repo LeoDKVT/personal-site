@@ -157,7 +157,12 @@ pre {
   background-color: #63084D;
 }
 
+/* borda da página cv */
+.border-sm {
+  border: 4px solid;
+}
 
+/* particulas */
 #particles-js {
   position: fixed;
   margin-top: 90px;
