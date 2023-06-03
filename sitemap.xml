@@ -4,56 +4,57 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://leodkvt.com.br/</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/portfolio</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/blog</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/contato</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/cv</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/blog-seo/otimizacao-de-imagens</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/blog-seo/sitemap</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/blog-seo/meta-tag</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/blog-react/deploy-vite</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://leodkvt.com.br/index</loc>
-  <lastmod>2023-05-17T03:17:29+00:00</lastmod>
+  <lastmod>2023-06-01T11:07:02+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
