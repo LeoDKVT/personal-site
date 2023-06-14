@@ -54,7 +54,11 @@
   </header>
 
   <section class="text-center text-white m-2">
-    <h1 class="display-3 degrade1 my-5 pb-1">Sitemap</h1>
+    <h1 class="display-3 degrade1 mt-5 pb-1">Como criar um Sitemap no site</h1>
+    <p class="font-italic text-orange">Criado em 09 de Abril de 2023</p>
+    <p class="mb-4">Para compartilhar: <button type="button" onclick="compartilharPorEmail()"
+        class="btn btn-outline-roxo">e-mail</button>
+    </p>
     <p>O arquivo
       <strong class="text-info">sitemap.xml</strong> é utilizado para listar as páginas que queremos que sejam
       encontradas nos resultados de busca de um site.
@@ -98,7 +102,6 @@
       <strong class="text-info">processado</strong>" será exibido na imagem exemplificada. Isso significa que a
       configuração do sitemap foi realizada corretamente 😜.
     </p>
-    <p class="font-italic text-orange mb-2">Criado em 09 de Abril de 2023 <br />por José Leonardo</p>
     <a href="../blog">
       <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
     </a>
@@ -122,6 +125,26 @@
       </a>
     </nav>
   </footer>
+
+  <!--função para compartilhar link do blog por e-mail-->
+  <script>
+    function compartilharPorEmail() {
+      // URL do blog que será compartilhado
+      const blogURL = "https://leodkvt.com.br/blog-seo/sitemap";
+
+      // Assunto do e-mail
+      const assuntoEmail = "Como criar um Sitemap no site";
+
+      // Corpo do e-mail
+      const corpoEmail = "Olá!\n\nEu gostaria de compartilhar este blog:\n\n" + blogURL;
+
+      // Criação do link de e-mail
+      const linkEmail = "mailto:" + "?subject=" + encodeURIComponent(assuntoEmail) + "&body=" + encodeURIComponent(corpoEmail);
+
+      // Redireciona para o link de e-mail
+      window.location.href = linkEmail;
+    }
+  </script>
 
   <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>

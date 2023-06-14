@@ -54,7 +54,11 @@
   </header>
 
   <section class="text-center text-white m-2">
-    <h1 class="display-3 degrade1 my-5 pb-1">Saiba como as tags meta influenciam o SEO do seu site</h1>
+    <h1 class="display-3 degrade1 mt-5 pb-1">Saiba como as tags meta influenciam o SEO do seu site</h1>
+    <p class="font-italic text-orange">Criado em 12 de Abril de 2023</p>
+    <p class="mb-4">Para compartilhar: <button type="button" onclick="compartilharPorEmail()"
+        class="btn btn-outline-roxo">e-mail</button>
+    </p>
     <p>Se você quer que seu site seja encontrado mais facilmente pelos mecanismos de busca, é importante usar meta tags
       em formato HTML. Dessa forma, é possível ter uma vantagem competitiva no ranking do Google e outros motores. Irei
       listar algumas tecla meta que são muito importantes no desenvolvimento web.</p>
@@ -90,7 +94,6 @@
       página não é indexada. <strong class="text-info">NoFollow:</strong> A página é indexada, mas os links não são
       seguidos.</p>
     <p>Por enquanto, isso é tudo. À medida que eu continuar estudando, adicionarei ainda mais conteúdo valioso🔥.</p>
-    <p class="font-italic text-orange mb-2">Criado em 12 de Abril de 2023 <br />por José Leonardo</p>
     <a href="../blog">
       <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
     </a>
@@ -114,6 +117,26 @@
       </a>
     </nav>
   </footer>
+
+  <!--função para compartilhar link do blog por e-mail-->
+  <script>
+    function compartilharPorEmail() {
+      // URL do blog que será compartilhado
+      const blogURL = "https://leodkvt.com.br/blog-seo/meta-tag";
+
+      // Assunto do e-mail
+      const assuntoEmail = "Saiba como as tags meta influenciam o SEO do seu site";
+
+      // Corpo do e-mail
+      const corpoEmail = "Olá!\n\nEu gostaria de compartilhar este blog:\n\n" + blogURL;
+
+      // Criação do link de e-mail
+      const linkEmail = "mailto:" + "?subject=" + encodeURIComponent(assuntoEmail) + "&body=" + encodeURIComponent(corpoEmail);
+
+      // Redireciona para o link de e-mail
+      window.location.href = linkEmail;
+    }
+  </script>
 
   <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>

@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-    content="Como almejar uma posição melhor no ranquemneto de pesquisa do google." />
+    <meta name="description" content="Como almejar uma posição melhor no ranquemneto de pesquisa do google." />
     <meta name="keywords" content="Seo, José Leonardo" />
     <meta name="author" content="José Leonardo" />
     <title>José Leonardo | Meu nome na primeira página do Google</title>
@@ -54,20 +53,22 @@
     </header>
 
     <section class="text-center text-white m-2">
-        <h1 class="display-3 degrade1 mt-5 pb-1">Consegui uma ótima classificação nas buscas de SEO ao pesquisar por meu nome</h1>
+        <h1 class="display-3 degrade1 mt-5 pb-1">Como eu consegui uma ótima classificação ao pesquisar por meu nome no
+            Google</h1>
+        <p class="font-italic text-orange">Atualizado em 03 de Junho de 2023</p>
+        <p class="mb-4">Para compartilhar: <button type="button" onclick="compartilharPorEmail()"
+                class="btn btn-outline-roxo">e-mail</button>
+        </p>
         <p>Acredito que todos os desenvolvedores web almejam desenvolver sites que tenham destaque nos resultados de
-            pesquisa do Google. Eu mesmo busquei colocar meu portfólio na primeira página de resultados ao realizar
-            busca pelo
-            meu nome.O sucesso desse trabalho depende de um processo que pode durar semanas ou meses, portanto, não
-            adianta
-            ter o melhor conteúdo e um site bem estruturado se não houver cliques orgânicos.</p>
+            pesquisa do Google. Eu mesmo busquei colocar meu portfólio entre os principais resultados ao pesquisar por
+            meu nome.O sucesso desse trabalho depende de um processo que pode durar semanas e até meses.
+            Então, não importa quão bom seja o seu conteúdo ou a sua estrutura de website, se não atrair
+            cliques orgânicos.</p>
 
         <h2 class="degrade">Um passo de cada vez:</h2>
-        <p>Com o objetivo de acrescentar mais conteúdo ao meu portfólio, não só com meus projetos, mas também com
-            informações relevantes, veio a ideia de criar um blog com dicas de desenvolvimento web. Esse tipo de
-            conteúdo é
-            importante para muitos, e como já tinha um site bem otimizado, rápido e atraente, vi nessa opção uma boa
-            oportunidade.
+        <p>Para enriquecer meu portfólio, decidi ir além dos meus projetos e compartilhar dicas de desenvolvimento web
+            em meu blog. Considerando a relevância desse tipo de conteúdo para muitos, optei por explorar essa
+            oportunidade já que possuía um site atraente, rápido e bem otimizado.
         </p>
 
         <h2 class="degrade">Dito isso, qual era o próximo desafio?</h2>
@@ -133,8 +134,6 @@
             acento,
             meu portfólio não será exibido nos resultados de pesquisa do Google. Estou ciente de que terei que enfrentar
             outras questões no decorrer do meu caminho, além dessa que já tenho em mãos.</p>
-
-        <p class="font-italic text-orange mb-2">Atualizado em 03 de Junho de 2023 <br />por José Leonardo</p>
         <a href="../blog">
             <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
         </a>
@@ -158,6 +157,26 @@
             </a>
         </nav>
     </footer>
+
+    <!--função para compartilhar link do blog por e-mail-->
+    <script>
+        function compartilharPorEmail() {
+            // URL do blog que será compartilhado
+            const blogURL = "https://leodkvt.com.br/blog-seo/meu-nome-constando-na-primeira-pagina-em-pesquisa";
+
+            // Assunto do e-mail
+            const assuntoEmail = "Como eu consegui uma ótima classificação ao pesquisar por meu nome no Google";
+
+            // Corpo do e-mail
+            const corpoEmail = "Olá!\n\nEu gostaria de compartilhar este blog:\n\n" + blogURL;
+
+            // Criação do link de e-mail
+            const linkEmail = "mailto:" + "?subject=" + encodeURIComponent(assuntoEmail) + "&body=" + encodeURIComponent(corpoEmail);
+
+            // Redireciona para o link de e-mail
+            window.location.href = linkEmail;
+        }
+    </script>
 
     <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
