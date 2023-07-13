@@ -71,11 +71,7 @@
 
   <section class="text-center text-white m-2">
     <h1 class="display-3 degrade1 mt-5 pb-1">Publique seu projeto React no Github Pages utilizando Vite</h1>
-    <p class="font-italic text-orange">Criado em 04 de Maio de 2023</p>
-    <p class="mb-4">Para compartilhar: <button type="button" onclick="compartilharPorEmail()"
-        class="btn btn-outline-roxo">e-mail</button>
-    </p>
-
+    <p class="font-italic text-orange mb-5">Criado em 04 de Maio de 2023</p>
     <h2 class="degrade mt-4 pb-2">Iniciando o deploy com o github pages</h2>
     <p>No arquivo “<strong class="text-info">vite.config.js</strong>” adicionar o comando “<strong
         class="text-info">base</strong>” de acordo com o nome do seu <strong>repositório</strong> do github por exemplo:
@@ -185,8 +181,51 @@
           <code class="user-select-all"><span class="text-info">npm</span> run preview </code>
         </pre>
     </div>
+
+    <div class="border border-roxo rounded bg-smoky my-4 py-4">
+      <p class="text-white pb-3">
+        Olá 👋 se você gostou deste blog, você pode compartilhá-lo em uma das seguintes plataformas:
+      </p>
+
+      <a class="text-decoration-none"
+        href="https://twitter.com/intent/tweet?url=https://leodkvt.com.br/blog-react/deploy-vite&text=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite:%20"
+        target="_blank"><img src="../img/rede-social/twitter.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Twitter" style="height: 40px" alt="logo twitter" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://leodkvt.com.br/blog-react/deploy-vite"
+        target="_blank"><img src="../img/rede-social/facebook.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Facebook" style="height: 40px" alt="logo facebook" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://www.linkedin.com/sharing/share-offsite/?url=https://leodkvt.com.br/blog-react/deploy-vite"
+        target="_blank"><img src="../img/rede-social/linkedin.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Linkedin" style="height: 40px" alt="logo linkedin" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://api.whatsapp.com/send?text=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite:%20https://leodkvt.com.br/blog-react/deploy-vite"
+        target="_blank"><img src="../img/rede-social/whatsapp.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Whatsapp" style="height: 40px" alt="logo whatsapp" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://mail.google.com/mail/u/0/?to=%7Bemail_address%7D&su=Publique+seu+um+projeto+React+no+Github+Pages+utilizando+Vite&body=Olá!%0A%0AEu+gostaria+de+compartilhar+este+blog:%0Ahttps://leodkvt.com.br/blog-react/deploy-vite/%0A%0AAtenciosamente&bcc=%7Bemail_address%7D&cc=%7Bemail_address%7D&fs=1&tf=cm"
+        target="_blank"><img src="../img/rede-social/gmail.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Gmail" style="height: 40px" alt="logo gmail" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="mailto:?subject=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite&body=Olá!%0A%0AEu%20gostaria%20de%20compartilhar%20este%20blog:%0Ahttps://leodkvt.com.br/blog-react/deploy-vite%2F%0A%0AAtenciosamente"
+        target="_blank"><img src="../img/rede-social/outlook.svg" class="img-fluid" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Email" style="height: 40px" alt="logo email" />
+      </a>
+    </div>
+
     <a href="../blog">
-      <button type="button" class="btn text-white bg-roxo m-4">Voltar ao Blog</button>
+      <button type="button" class="btn text-white bg-roxo mb-4">Voltar ao Blog</button>
     </a>
   </section>
 
@@ -208,26 +247,6 @@
       </a>
     </nav>
   </footer>
-
-  <!--função para compartilhar link do blog por e-mail-->
-  <script>
-    function compartilharPorEmail() {
-      // URL do blog que será compartilhado
-      const blogURL = "https://leodkvt.com.br/blog-react/deploy-vite";
-
-      // Assunto do e-mail
-      const assuntoEmail = "Publique seu projeto React no Github Pages utilizando Vite";
-
-      // Corpo do e-mail
-      const corpoEmail = "Olá!\n\nEu gostaria de compartilhar este blog:\n" + blogURL + "\n\nEspero que seja útil para você.\nAtenciosamente,\n\nJosé Leonardo";
-
-      // Criação do link de e-mail
-      const linkEmail = "mailto:" + "?subject=" + encodeURIComponent(assuntoEmail) + "&body=" + encodeURIComponent(corpoEmail);
-
-      // Redireciona para o link de e-mail
-      window.location.href = linkEmail;
-    }
-  </script>
 
   <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
