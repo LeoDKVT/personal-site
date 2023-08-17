@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Markdown é uma linguagem de marcação simples que permite fácil formatação de texto sem a necessidade de aprender uma linguagem mais complexa como HTML" />
+  <meta name="keywords" content="markdown, github" />
+  <meta name="author" content="José Leonardo" />
+
+  <!-- Facebook, Whatsapp e Linkedin - Meta Tags Open Graph -->
+  <meta property="og:url" content="https://leodkvt.com.br/blog-markdown/markdown">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="José Leonardo | Markdown">
+  <meta property="og:description" content="Conheça os comandos essenciais de Markdown que você precisa saber">
+  <meta property="og:image" content="https://i.imgur.com/ITrslDG.jpg">
+
+  <!-- Twitter Meta Tags Open Graph -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="José Leonardo | Markdown">
+  <meta name="twitter:description" content="Conheça os comandos essenciais de Markdown que você precisa saber">
+  <meta name="twitter:image" content="https://i.imgur.com/ITrslDG.jpg">
+
+  <title>José Leonardo | Markdown</title>
+  <link rel="shortcut icon" href="../img/favicon-logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<!-- Google tag manager(gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X537NV62CX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-X537NV62CX');
+</script>
+
+<body class="bg-black">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-smoky py-3 box-shadow">
+      <a class="navbar-brand" href="../">
+        <img src="../img/leo-logo.svg" style="width: 195px; height: 50px" alt="José Leonardo Dev Front-end" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../portfolio">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="text-center text-white m-2">
+    <h1 class="display-3 degrade1 mt-5 pb-1">Conheça os comandos essenciais de Markdown que você precisa saber</h1>
+    <p class="font-italic text-orange mb-5">Criado em 17 de Agosto de 2023</p>
+    <p>A principal finalidade do Markdown é estilizar e formatar o texto. Neste contexto, vamos abordar os layouts
+      básicos de texto que podem ser criados com o Markdown. Além disso, para criar um arquivo markdown, basta adicionar
+      a extensão <strong class="bg-dark px-2 rounded text-orange">.md</strong>ao nome do arquivo.</p>
+    <h2 class="degrade">Títulos:</h2>
+    <p>O Markdown possui seis níveis de cabeçalhos, assim como o HTML. Para criar títulos no Markdown, basta adicionar
+      de um a seis <strong class="bg-dark px-2 rounded text-orange">#</strong>antes do texto do título, separado por um
+      espaço. Cada <strong class="bg-dark px-2 rounded text-orange">#</strong>representa um nível de título, sendo que
+      um <strong class="bg-dark px-2 rounded text-orange">#</strong>indica o título maior e seis <strong
+        class="bg-dark px-2 rounded text-orange">######</strong>indicam o título menor. Aqui está um exemplo de todos
+      os seis níveis de títulos.</p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p># Cabeçalho 1</p>
+          <p>## Cabeçalho 2</p>
+          <p>### Cabeçalho 3</p>
+          <p>#### Cabeçalho 4</p>
+          <p>##### Cabeçalho 5</p>
+          <p>###### Cabeçalho 6</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <h1>Cabeçalho 1</h1>
+          <h2>Cabeçalho 2</h2>
+          <h3>Cabeçalho 3</h3>
+          <h4>Cabeçalho 4</h4>
+          <h5>Cabeçalho 5</h5>
+          <h6>Cabeçalho 6</h6>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="degrade">Parágrafos:</h2>
+    <p>Os parágrafos no Markdown têm um formato de texto pré-definido. Ao digitar o texto, ele será convertido
+      automaticamente em um parágrafo. A única coisa importante a lembrar sobre o Markdown é que, <strong
+        class="text-orange">
+        se você quiser separar
+        o texto em dois parágrafos distintos, é necessário adicionar uma linha em branco entre cada conjunto de texto.
+      </strong>
+      Caso <strong class="text-orange">
+        queira apenas uma nova linha dentro do mesmo parágrafo, basta adicionar dois espaços no final da linha e ela
+        será convertida em uma nova linha.
+      </strong></p>
+
+    <h2 class="degrade">Estilização de texto</h2>
+    <p>Além de apenas especificar o local onde seu texto deve aparecer, você pode também definir o estilo que ele deve
+      ter.</p>
+
+    <h3 class="degrade h4">Negrito/Itálico</h3>
+    <p>Negrito e itálico são as duas formas mais frequentes de formatar texto. Para aplicar negrito, você pode usar um
+      <strong class="bg-dark px-2 rounded text-orange">*</strong>ou <strong
+        class="bg-dark px-2 rounded text-orange">_</strong>ao redor do texto desejado e para itálico, para negrito basta
+      usar dois <strong class="bg-dark px-2 rounded text-orange">*</strong>ou dois <strong
+        class="bg-dark px-2 rounded text-orange">_</strong>.
+    </p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p>*Este é um texto em itálico*</p>
+          <p>_Este também é um texto em itálico_</p>
+          <p>**Este é um texto em negrito**</p>
+          <p>__Este também é um texto em negrito__</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p><i>Este é um texto em itálico</i></p>
+          <p><i>Este também é um texto em itálico</i></p>
+          <p><strong>Este é um texto em negrito</strong></p>
+          <p><strong>Este também é um texto em negrito</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <p>Caso queira combinar negrito e itálico, você pode simplesmente digitar três asterisco <strong
+        class="bg-dark px-2 rounded text-orange">*</strong>ou em três underline
+      <strong class="bg-dark px-2 rounded text-orange">_</strong>assim ficaria em negrito e itálico.
+    </p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p>***Isso é ambos***</p>
+          <p>___Isso também é ambos___</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p><i><strong>Isso é ambos</strong></i></p>
+          <p><i><strong>Isso também é ambos</strong></i></p>
+        </div>
+      </div>
+    </div>
+
+    <p>Regularmente, é recomendado optar por <strong class="bg-dark px-2 rounded text-orange">*</strong>ao invés de,
+      <strong class="bg-dark px-2 rounded text-orange">_</strong>já que em algumas situações o Markdown pode
+      não funcionar adequadamente se houver <strong class="bg-dark px-2 rounded text-orange">_</strong>no meio de uma
+      palavra.
+    </p>
+
+    <h3 class="degrade h4">Tachado</h3>
+    <p>Aqui temos o nosso primeiro recurso estendido de Markdown. Para criar um texto tachado, você precisa dividir o
+      texto em dois <strong class="bg-dark px-2 rounded text-orange">~</strong>caracteres.</p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p>~~Texto deletado~~</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p><del>Texto deletado</del></p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="degrade h4">Emoji</h3>
+    <p>Para adicionar um emoji, basta digitar <strong class="bg-dark px-2 rounded text-orange">:EMOJI_NAME:</strong>e
+      ele será convertido em um emoji. Comparado a outros recursos estendidos do Markdown mencionados, este recurso tem
+      um suporte muito menor. No entanto, você pode adicionar emojis copiando e colando-os no seu Markdown.</p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p>:smile:</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p>😊</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="degrade">Código de manipulação</h2>
+
+
+
+    <!-- Realizar a configuração daqui em diante...-->
+
+
+
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p>:smile:</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <div class="caixa pt-3 rounded">
+            <pre class="rounded bg-black">
+                <code class="user-select-all"><span class="text-info">npm</span> run build </code>
+              </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <p>Ao acionar este comando, um arquivo chamado "dist" será criado como a página estática.</p>
+    <div class="caixa">
+      <pre class="sombra">
+          <code class="user-select-all"><span class="text-info">npm</span> run build </code>
+        </pre>
+    </div>
+    <p>E para ver essa página estática basta rodar esse comando para ver esse projeto em produção:</p>
+    <div class="caixa">
+      <pre class="sombra">
+          <code class="user-select-all"><span class="text-info">npm</span> run preview </code>
+        </pre>
+    </div>
+
+    <div class="border border-roxo rounded bg-smoky my-4 py-4">
+      <p class="text-white pb-3">
+        Olá 👋 se você gostou deste blog, você pode compartilhá-lo em uma das seguintes plataformas:
+      </p>
+
+      <a class="text-decoration-none"
+        href="https://twitter.com/intent/tweet?url=https://leodkvt.com.br/blog-react/deploy-vite&text=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite:%20"
+        target="_blank"><img src="../img/rede-social/twitter.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Twitter" style="height: 40px" alt="logo twitter" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://leodkvt.com.br/blog-react/deploy-vite"
+        target="_blank"><img src="../img/rede-social/facebook.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Facebook" style="height: 40px" alt="logo facebook" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://www.linkedin.com/sharing/share-offsite/?url=https://leodkvt.com.br/blog-react/deploy-vite"
+        target="_blank"><img src="../img/rede-social/linkedin.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Linkedin" style="height: 40px" alt="logo linkedin" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://api.whatsapp.com/send?text=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite:%20https://leodkvt.com.br/blog-react/deploy-vite"
+        target="_blank"><img src="../img/rede-social/whatsapp.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Whatsapp" style="height: 40px" alt="logo whatsapp" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="https://mail.google.com/mail/u/0/?to=%7Bemail_address%7D&su=Publique+seu+um+projeto+React+no+Github+Pages+utilizando+Vite&body=Olá!%0A%0AEu+gostaria+de+compartilhar+este+blog:%0Ahttps://leodkvt.com.br/blog-react/deploy-vite%0A%0AAtenciosamente&bcc=%7Bemail_address%7D&cc=%7Bemail_address%7D&fs=1&tf=cm"
+        target="_blank"><img src="../img/rede-social/gmail.svg" class="img-fluid pr-3" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Gmail" style="height: 40px" alt="logo gmail" />
+      </a>
+
+      <a class="text-decoration-none"
+        href="mailto:?subject=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite&body=Olá!%0A%0AEu%20gostaria%20de%20compartilhar%20este%20blog:%0Ahttps://leodkvt.com.br/blog-react/deploy-vite%0A%0AAtenciosamente"
+        target="_blank"><img src="../img/rede-social/outlook.svg" class="img-fluid" data-toggle="tooltip"
+          data-placement="top" title="Compartilhe via Email" style="height: 40px" alt="logo email" />
+      </a>
+    </div>
+
+    <a href="../blog">
+      <button type="button" class="btn text-white bg-roxo mb-4">Voltar ao Blog</button>
+    </a>
+  </section>
+
+  <footer class="container text-center">
+    <nav class="redesocial mb-3">
+      <a id="gmail" href="mailto:leodkvt@gmail.com" target="blank" aria-label="link do meu e-mail para contato">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <a id="linkedin" href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/" rel="nofollow" target="blank"
+        aria-label="link do meu Linkedin ">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a id="github" href="https://github.com/LeoDKVT" target="blank" aria-label="link do meu Github">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5511939275748" target="blank"
+        aria-label="link do meu Whatsapp para contato">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </nav>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+</body>
+
+</html>
