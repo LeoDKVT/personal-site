@@ -68,7 +68,7 @@
   </header>
 
   <section class="text-center text-white m-2">
-    <h1 class="display-3 degrade1 mt-5 pb-1">Conheça os comandos essenciais de Markdown que você precisa saber</h1>
+    <h1 class="display-3 degrade1 mt-5 pb-1">Conheça os comandos essenciais do Markdown que você precisa saber</h1>
     <p class="font-italic text-orange mb-5">Criado em 17 de Agosto de 2023</p>
     <p>A principal finalidade do Markdown é estilizar e formatar o texto. Neste contexto, vamos abordar os layouts
       básicos de texto que podem ser criados com o Markdown. Além disso, para criar um arquivo markdown, basta adicionar
@@ -118,7 +118,7 @@
     <p>Além de apenas especificar o local onde seu texto deve aparecer, você pode também definir o estilo que ele deve
       ter.</p>
 
-    <h3 class="degrade h4">Negrito/Itálico</h3>
+    <h3 class="degrade1 h4">Negrito/Itálico</h3>
     <p>Negrito e itálico são as duas formas mais frequentes de formatar texto. Para aplicar negrito, você pode usar um
       <strong class="bg-dark px-2 rounded text-orange">*</strong>ou <strong
         class="bg-dark px-2 rounded text-orange">_</strong>ao redor do texto desejado e para itálico, para negrito basta
@@ -167,7 +167,7 @@
       palavra.
     </p>
 
-    <h3 class="degrade h4">Tachado</h3>
+    <h3 class="degrade1 h4">Tachado</h3>
     <p>Aqui temos o nosso primeiro recurso estendido de Markdown. Para criar um texto tachado, você precisa dividir o
       texto em dois <strong class="bg-dark px-2 rounded text-orange">~</strong>caracteres.</p>
 
@@ -182,7 +182,7 @@
       </div>
     </div>
 
-    <h3 class="degrade h4">Emoji</h3>
+    <h3 class="degrade1 h4">Emoji</h3>
     <p>Para adicionar um emoji, basta digitar <strong class="bg-dark px-2 rounded text-orange">:EMOJI_NAME:</strong>e
       ele será convertido em um emoji. Comparado a outros recursos estendidos do Markdown mencionados, este recurso tem
       um suporte muito menor. No entanto, você pode adicionar emojis copiando e colando-os no seu Markdown.</p>
@@ -199,45 +199,159 @@
     </div>
 
     <h2 class="degrade">Código de manipulação</h2>
+    <p>Uma das maneiras mais usuais de utilizar o Markdown é para mostrar código. Por padrão, você pode apresentar o
+      código no meio do texto ou em um bloco.</p>
 
+    <h3 class="degrade1 h4">Código embutido</h3>
 
-
-    <!-- Realizar a configuração daqui em diante...-->
-
-
+    <p>Para mostrar o código embutido, basta envolvê-lo em um único <strong
+        class="bg-dark px-2 rounded text-orange">`</strong>caractere. Isso é útil quando se deseja exibir
+      pequenos trechos de código em um parágrafo.</p>
 
     <div class="container border border-roxo">
       <div class="row text-left">
         <div class="col border border-roxo bg-dark">
-          <p>:smile:</p>
+          <p>Isso está em `inline code` dentro de um parágrafo.</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p>Isso está em <code class="text-white">inline code</code> dentro de um parágrafo.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="degrade1 h4">Blocos de código</h3>
+    <p>Uma forma de exibir um bloco maior de código é agrupá-lo em três <strong
+        class="bg-dark px-2 rounded text-orange">`</strong>caracteres. Além disso, para realçar a sintaxe,
+      você pode adicionar o idioma do bloco de código depois dos três <strong
+        class="bg-dark px-2 rounded text-orange">`</strong>caracteres. Essa é uma funcionalidade avançada do
+      Markdown, mas é compatível com a maioria das variantes do Markdown.</p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p>```js <br>
+            // Este é um bloco de código <br>
+            const a = 5; <br>
+            ```</p>
         </div>
         <div class="col border border-roxo bg-smoky">
           <div class="caixa pt-3 rounded">
             <pre class="rounded bg-black">
-                <code class="user-select-all"><span class="text-info">npm</span> run build </code>
+                <code class="user-select-all"> <p class="text-left m-0">// Este é um bloco de código <br>const a = 5;</p></code>
               </pre>
           </div>
         </div>
       </div>
     </div>
 
+    <h2 class="degrade">Outros elementos</h2>
+    <p>Até este ponto, focamos em como estilizar o texto e exibir o código, porém o Markdown conta ainda com suporte
+      para outras funcionalidades.</p>
 
+    <h3 class="degrade1 h4">links</h3>
+    <p>Se você quiser criar um link, basta colocar o texto entre colchetes e, em seguida, incluir o link entre
+      parênteses. É possível até criar links relativos dessa maneira. Se você incluir um URL sozinho, se você estiver
+      usando certos tipos de Markdown estendidos, ele será convertido automaticamente em um link; caso
+      contrário, basta envolvê-lo em <code class="bg-dark px-2 rounded text-orange"><></code>para que ele se torne um
+      link.</p>
 
-
-
-
-    <p>Ao acionar este comando, um arquivo chamado "dist" será criado como a página estática.</p>
-    <div class="caixa">
-      <pre class="sombra">
-          <code class="user-select-all"><span class="text-info">npm</span> run build </code>
-        </pre>
+    <div class="container border border-roxo">
+      <div class="row text-left">
+        <div class="col border border-roxo bg-dark">
+          <p>[Este é um link] <br> (https:leodkvt.com.br)</p>
+          <p>[Relativo] <br> (/blog-markdown/markdown)</p>
+          <p>https:leodkvt.com.br</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p><a href="https:leodkvt.com.br" >Este é um link</a></p>
+          <p><a href="/blog-markdown/markdown">Relativo</a></p>
+          <p><a href="https:leodkvt.com.br">https:leodkvt.com.br</a></p>
+        </div>
+      </div>
     </div>
-    <p>E para ver essa página estática basta rodar esse comando para ver esse projeto em produção:</p>
-    <div class="caixa">
-      <pre class="sombra">
-          <code class="user-select-all"><span class="text-info">npm</span> run preview </code>
-        </pre>
-    </div>
+
+    <!--Continuar daqui em diante desse blog-->
+
+    <h3 class="degrade1 h4">Imagens</h3>
+    <p>A aparência das imagens é bastante semelhante aos links, uma vez que são agrupadas entre colchetes e parênteses.
+      A única distinção está na necessidade de adicionar um ponto de exclamação antes dos colchetes. Além disso, o texto
+      entre colchetes é utilizado como uma descrição alternativa da imagem, enquanto o link entre parênteses indica a
+      fonte da imagem.</p>
+
+    <h3 class="degrade1 h4">Citações em bloco</h3>
+    <p>As blockquotes servem para fazer citações de outras fontes. Para criar uma blockquote, basta adicionar o
+      caractere <strong class="bg-dark px-2 rounded text-orange">></strong>antes do texto desejado. É possível, ainda,
+      aninhar blockquotes adicionando múltiplos
+      caracteres <strong class="bg-dark px-2 rounded text-orange">></strong>.
+    </p>
+
+    <h3 class="degrade1 h4">Régua horizontal</h3>
+    <p>Para inserir uma régua horizontal, coloque três ou mais caracteres <strong
+        class="bg-dark px-2 rounded text-orange">-</strong>, <strong
+        class="bg-dark px-2 rounded text-orange">_</strong>ou <strong
+        class="bg-dark px-2 rounded text-orange">*</strong>em uma única linha.</p>
+
+    <h3 class="degrade1 h4">Listas</h3>
+    <p>Markdown possui dois tipos de listas: ordenadas e não ordenadas. Para criar uma lista não ordenada, adicione um
+      dos seguintes caracteres no início de cada item: <strong class="bg-dark px-2 rounded text-orange">-</strong>,
+      <strong class="bg-dark px-2 rounded text-orange">*</strong>, ou <strong
+        class="bg-dark px-2 rounded text-orange">+</strong>. Para criar uma lista ordenada, adicione um número
+      seguido de um <strong class="bg-dark px-2 rounded text-orange">.</strong>ponto antes de cada item,
+      independentemente da ordem em que os números são utilizados. É possível
+      também aninhar listas ao adicionar quatro espaços ou uma tabulação para recuar os itens.
+    </p>
+
+
+    <h3 class="degrade1 h4">Tabelas</h3>
+    <p>As tabelas possuem uma complexidade um pouco maior em comparação com os outros elementos que abordamos até agora.
+      A criação de uma tabela envolve a construção de uma lista de linhas, em que cada coluna é separada por um
+      <strong class="bg-dark px-2 rounded text-orange">|</strong>.
+      Cada linha deve iniciar e terminar com um <strong class="bg-dark px-2 rounded text-orange">|</strong>. Logo abaixo
+      da primeira linha, é necessário inserir
+      uma linha
+      contendo pelo menos três <strong class="bg-dark px-2 rounded text-orange">-</strong> para cada coluna, além da
+      possibilidade de incluir <strong class="bg-dark px-2 rounded text-orange">:</strong>
+      em ambos os lados dos <strong class="bg-dark px-2 rounded text-orange">-</strong>. O
+      <strong class="bg-dark px-2 rounded text-orange">:</strong>é utilizado para alinhar o texto na coluna. Se
+      colocado no lado esquerdo dos
+      <strong class="bg-dark px-2 rounded text-orange">-</strong>, o texto será alinhado à
+      esquerda. Se colocado no lado direito, o texto ficará alinhado à direita. Caso seja colocado em ambos os lados, o
+      texto será alinhado ao centro. Por fim, é possível adicionar mais linhas à tabela seguindo o mesmo formato da
+      primeira linha. Embora pareça complicado, quando visto em ação, tudo faz sentido.
+    </p>
+
+    <h3 class="degrade1 h4">Lista de controle</h3>
+    <p>Chegamos ao último elemento da nossa discussão, que é a lista de verificação. Essa funcionalidade faz parte do
+      Markdown avançado e também é suportada pelo GitHub Flavored Markdown. Para criar uma lista de verificação, basta
+      adicionar um <strong class="bg-dark px-2 rounded text-orange">- [ ]</strong>ou <strong
+        class="bg-dark px-2 rounded text-orange">- [x]</strong>antes de cada item da lista. Utilize <strong
+        class="bg-dark px-2 rounded text-orange">- [ ]</strong>para criar uma caixa de seleção não
+      marcada, e <strong class="bg-dark px-2 rounded text-orange">- [x]</strong>para criar uma caixa de seleção marcada.
+    </p>
+
+    <h2 class="degrade">Conclusão</h2>
+    <p>Em termos de potencial, o Markdown realmente não conhece limites, pois não apenas capacita os usuários a dominar
+      facilmente a arte do estilo de texto, permitindo que eles destaquem, coloquem em itálico ou negrito conteúdo
+      importante conforme desejado, mas também vão além ao fornecendo uma variedade de recursos adicionais, como criação
+      de listas, tabelas, inserção de imagens ou hiperlinks, incorporação contínua de blocos de código e muito mais,
+      transformando a experiência geral de edição de texto em uma experiência incrivelmente versátil e rica.
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="border border-roxo rounded bg-smoky my-4 py-4">
       <p class="text-white pb-3">
@@ -245,37 +359,37 @@
       </p>
 
       <a class="text-decoration-none"
-        href="https://twitter.com/intent/tweet?url=https://leodkvt.com.br/blog-react/deploy-vite&text=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite:%20"
+        href="https://twitter.com/intent/tweet?url=https://leodkvt.com.br/blog-markdown/markdown&text=Conheça%20os%20comandos%20essenciais%20do%20Markdown%20que%20você%20precisa%20saber:%20"
         target="_blank"><img src="../img/rede-social/twitter.svg" class="img-fluid pr-3" data-toggle="tooltip"
           data-placement="top" title="Compartilhe via Twitter" style="height: 40px" alt="logo twitter" />
       </a>
 
       <a class="text-decoration-none"
-        href="https://www.facebook.com/sharer/sharer.php?u=https://leodkvt.com.br/blog-react/deploy-vite"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://leodkvt.com.br/blog-markdown/markdown"
         target="_blank"><img src="../img/rede-social/facebook.svg" class="img-fluid pr-3" data-toggle="tooltip"
           data-placement="top" title="Compartilhe via Facebook" style="height: 40px" alt="logo facebook" />
       </a>
 
       <a class="text-decoration-none"
-        href="https://www.linkedin.com/sharing/share-offsite/?url=https://leodkvt.com.br/blog-react/deploy-vite"
+        href="https://www.linkedin.com/sharing/share-offsite/?url=https://leodkvt.com.br/blog-markdown/markdown"
         target="_blank"><img src="../img/rede-social/linkedin.svg" class="img-fluid pr-3" data-toggle="tooltip"
           data-placement="top" title="Compartilhe via Linkedin" style="height: 40px" alt="logo linkedin" />
       </a>
 
       <a class="text-decoration-none"
-        href="https://api.whatsapp.com/send?text=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite:%20https://leodkvt.com.br/blog-react/deploy-vite"
+        href="https://api.whatsapp.com/send?text=Conheça%20os%20comandos%20essenciais%20do%20Markdown%20que%20você%20precisa%20saber:%20https://leodkvt.com.br/blog-markdown/markdown"
         target="_blank"><img src="../img/rede-social/whatsapp.svg" class="img-fluid pr-3" data-toggle="tooltip"
           data-placement="top" title="Compartilhe via Whatsapp" style="height: 40px" alt="logo whatsapp" />
       </a>
 
       <a class="text-decoration-none"
-        href="https://mail.google.com/mail/u/0/?to=%7Bemail_address%7D&su=Publique+seu+um+projeto+React+no+Github+Pages+utilizando+Vite&body=Olá!%0A%0AEu+gostaria+de+compartilhar+este+blog:%0Ahttps://leodkvt.com.br/blog-react/deploy-vite%0A%0AAtenciosamente&bcc=%7Bemail_address%7D&cc=%7Bemail_address%7D&fs=1&tf=cm"
+        href="https://mail.google.com/mail/u/0/?to=%7Bemail_address%7D&su=Conheça+os+comandos+essenciais+do+Markdown+que+você+precisa+saber&body=Olá!%0A%0AEu+gostaria+de+compartilhar+este+blog:%0Ahttps://leodkvt.com.br/blog-markdown/markdown%0A%0AAtenciosamente&bcc=%7Bemail_address%7D&cc=%7Bemail_address%7D&fs=1&tf=cm"
         target="_blank"><img src="../img/rede-social/gmail.svg" class="img-fluid pr-3" data-toggle="tooltip"
           data-placement="top" title="Compartilhe via Gmail" style="height: 40px" alt="logo gmail" />
       </a>
 
       <a class="text-decoration-none"
-        href="mailto:?subject=Publique%20seu%20projeto%20React%20no%20Github%20Pages%20utilizando%20Vite&body=Olá!%0A%0AEu%20gostaria%20de%20compartilhar%20este%20blog:%0Ahttps://leodkvt.com.br/blog-react/deploy-vite%0A%0AAtenciosamente"
+        href="mailto:?subject=Conheça%20os%20comandos%20essenciais%20do%20Markdown%20que%20você%20precisa%20saber&body=Olá!%0A%0AEu%20gostaria%20de%20compartilhar%20este%20blog:%0Ahttps://leodkvt.com.br/blog-markdown/markdown%0A%0AAtenciosamente"
         target="_blank"><img src="../img/rede-social/outlook.svg" class="img-fluid" data-toggle="tooltip"
           data-placement="top" title="Compartilhe via Email" style="height: 40px" alt="logo email" />
       </a>
