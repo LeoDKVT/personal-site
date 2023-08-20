@@ -69,7 +69,7 @@
 
   <section class="text-center text-white m-2">
     <h1 class="display-3 degrade1 mt-5 pb-1">Conheça os comandos essenciais do Markdown que você precisa saber</h1>
-    <p class="font-italic text-orange mb-5">Criado em 17 de Agosto de 2023</p>
+    <p class="font-italic text-orange mb-5">Criado em 20 de Agosto de 2023</p>
     <p>A principal finalidade do Markdown é estilizar e formatar o texto. Neste contexto, vamos abordar os layouts
       básicos de texto que podem ser criados com o Markdown. Além disso, para criar um arquivo markdown, basta adicionar
       a extensão <strong class="bg-dark px-2 rounded text-orange">.md</strong>ao nome do arquivo.</p>
@@ -82,7 +82,7 @@
       os seis níveis de títulos.</p>
 
     <div class="container border border-roxo">
-      <div class="row text-left">
+      <div class="row text-left" style="min-height: 300px;">
         <div class="col border border-roxo bg-dark">
           <p># Cabeçalho 1</p>
           <p>## Cabeçalho 2</p>
@@ -149,7 +149,7 @@
     </p>
 
     <div class="container border border-roxo">
-      <div class="row text-left">
+      <div class="row text-left" style="min-height: 300px;">
         <div class="col border border-roxo bg-dark">
           <p>***Isso é ambos***</p>
           <p>___Isso também é ambos___</p>
@@ -172,7 +172,7 @@
       texto em dois <strong class="bg-dark px-2 rounded text-orange">~</strong>caracteres.</p>
 
     <div class="container border border-roxo">
-      <div class="row text-left">
+      <div class="row text-left" style="min-height: 300px;">
         <div class="col border border-roxo bg-dark">
           <p>~~Texto deletado~~</p>
         </div>
@@ -188,7 +188,7 @@
       um suporte muito menor. No entanto, você pode adicionar emojis copiando e colando-os no seu Markdown.</p>
 
     <div class="container border border-roxo">
-      <div class="row text-left">
+      <div class="row text-left" style="min-height: 300px;">
         <div class="col border border-roxo bg-dark">
           <p>:smile:</p>
         </div>
@@ -209,7 +209,7 @@
       pequenos trechos de código em um parágrafo.</p>
 
     <div class="container border border-roxo">
-      <div class="row text-left">
+      <div class="row text-left" style="min-height: 300px;">
         <div class="col border border-roxo bg-dark">
           <p>Isso está em `inline code` dentro de um parágrafo.</p>
         </div>
@@ -227,7 +227,7 @@
       Markdown, mas é compatível com a maioria das variantes do Markdown.</p>
 
     <div class="container border border-roxo">
-      <div class="row text-left">
+      <div class="row text-left" style="min-height: 300px;">
         <div class="col border border-roxo bg-dark">
           <p>```js <br>
             // Este é um bloco de código <br>
@@ -256,27 +256,36 @@
       link.</p>
 
     <div class="container border border-roxo">
-      <div class="row text-left">
+      <div class="row text-left" style="min-height: 300px;">
         <div class="col border border-roxo bg-dark">
           <p>[Este é um link] <br> (https:leodkvt.com.br)</p>
           <p>[Relativo] <br> (/blog-markdown/markdown)</p>
           <p>https:leodkvt.com.br</p>
         </div>
         <div class="col border border-roxo bg-smoky">
-          <p><a href="https:leodkvt.com.br" >Este é um link</a></p>
+          <p><a href="https:leodkvt.com.br">Este é um link</a></p>
           <p><a href="/blog-markdown/markdown">Relativo</a></p>
           <p><a href="https:leodkvt.com.br">https:leodkvt.com.br</a></p>
         </div>
       </div>
     </div>
 
-    <!--Continuar daqui em diante desse blog-->
-
     <h3 class="degrade1 h4">Imagens</h3>
     <p>A aparência das imagens é bastante semelhante aos links, uma vez que são agrupadas entre colchetes e parênteses.
       A única distinção está na necessidade de adicionar um ponto de exclamação antes dos colchetes. Além disso, o texto
       entre colchetes é utilizado como uma descrição alternativa da imagem, enquanto o link entre parênteses indica a
       fonte da imagem.</p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left" style="min-height: 300px;">
+        <div class="col border border-roxo bg-dark">
+          <p>![Vscode Logo](/Assets/images/vscode.svg)</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p><img src="../img/vscode.svg" alt="logo vscode"></p>
+        </div>
+      </div>
+    </div>
 
     <h3 class="degrade1 h4">Citações em bloco</h3>
     <p>As blockquotes servem para fazer citações de outras fontes. Para criar uma blockquote, basta adicionar o
@@ -285,11 +294,48 @@
       caracteres <strong class="bg-dark px-2 rounded text-orange">></strong>.
     </p>
 
+    <div class="container border border-roxo">
+      <div class="row text-left" style="min-height: 300px;">
+        <div class="col border border-roxo bg-dark">
+          <p>Isso é uma citação de bloco</p>
+          <p>Esta é uma citação em bloco aninhada</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <blockquote class="border-left border-dark pl-3">
+            <p>Este é um exemplo de citação de bloco.</p>
+            <blockquote class="border-left border-dark pl-3" style="border-left-width: 100px;">
+              <p>Este é um exemplo de citação de bloco aninhada.</p>
+            </blockquote>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
     <h3 class="degrade1 h4">Régua horizontal</h3>
     <p>Para inserir uma régua horizontal, coloque três ou mais caracteres <strong
         class="bg-dark px-2 rounded text-orange">-</strong>, <strong
         class="bg-dark px-2 rounded text-orange">_</strong>ou <strong
         class="bg-dark px-2 rounded text-orange">*</strong>em uma única linha.</p>
+
+    <div class="container border border-roxo">
+      <div class="row text-left" style="min-height: 300px;">
+        <div class="col border border-roxo bg-dark">
+          <p>Isso está acima da régua horizontal</p>
+          <p>***</p>
+          <p>Isso está entre as regras horizontais</p>
+          <p>---</p>
+          <p>Isso está entre as regras horizontais</p>
+          <p>___</p>
+          <p>Isso está abaixo da régua horizontal</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <p class="border-bottom border-dark pb-3">Isso está acima da régua horizontal</p>
+          <p class="border-bottom border-dark pb-3">Isso está entre as regras horizontais</p>
+          <p class="border-bottom border-dark pb-3">Isso está entre as regras horizontais</p>
+          <p>Isso está abaixo da régua horizontal</p>
+        </div>
+      </div>
+    </div>
 
     <h3 class="degrade1 h4">Listas</h3>
     <p>Markdown possui dois tipos de listas: ordenadas e não ordenadas. Para criar uma lista não ordenada, adicione um
@@ -301,6 +347,36 @@
       também aninhar listas ao adicionar quatro espaços ou uma tabulação para recuar os itens.
     </p>
 
+    <div class="container border border-roxo">
+      <div class="row text-left" style="min-height: 300px;">
+        <div class="col border border-roxo bg-dark">
+          <p>- Esta é uma lista não ordenada <br> - De itens</p>
+          <span>1. Esta é uma lista ordenada <br> 2. Os números não importam <br> 1. Isso diz 3 <br></span>
+          <span class="ml-4">* Esta é uma lista aninhada <br></span>
+          <span class="ml-4">* De itens</span>
+          <p class="ml-5">1. Este é um aninhado <br>2. Lista de itens</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <ul>
+            <li>Esta é uma lista não ordenada</li>
+            <li>de itens</li>
+          </ul>
+          <ol>
+            <li>Esta é uma lista ordenada</li>
+            <li>Os números não importam</li>
+            <li>Isso diz 3</li>
+            <ul>
+              <li>Esta é uma lista aninhada</li>
+              <li>De itens</li>
+              <ol type="a">
+                <li>Este é um aninhado</li>
+                <li>Lista de itens</li>
+              </ol>
+            </ul>
+          </ol>
+        </div>
+      </div>
+    </div>
 
     <h3 class="degrade1 h4">Tabelas</h3>
     <p>As tabelas possuem uma complexidade um pouco maior em comparação com os outros elementos que abordamos até agora.
@@ -320,6 +396,67 @@
       primeira linha. Embora pareça complicado, quando visto em ação, tudo faz sentido.
     </p>
 
+    <div class="container border border-roxo">
+      <div class="row text-left" style="min-height: 300px;">
+        <div class="col border border-roxo bg-dark">
+
+          <p>| Coluna1 | Coluna2 | <br>
+            | --- | --- | <br>
+            | Não precisa | Ser | <br>
+            | Alinhado | Apropriadamente | <br>
+            | Essas | Colunas | <br>
+          </p>
+
+          <p>| Right | Center | Left | <br>
+            | -----: | :----: | :--- | <br>
+            | R | C | L |
+          </p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <table class="table table-bordered table-striped text-white">
+            <thead>
+              <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Não precisa</td>
+                <td>Ser</td>
+              </tr>
+              <tr class="bg-dark">
+                <td>Alinhado</td>
+                <td>Apropriadamente</td>
+              </tr>
+              <tr>
+                <td>Essas</td>
+                <td>Colunas</td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+
+          <table class="table table-striped table-bordered text-white">
+            <thead>
+              <tr>
+                <th>Right</th>
+                <th>Center</th>
+                <th>Left</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>R</td>
+                <td>C</td>
+                <td>L</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <h3 class="degrade1 h4">Lista de controle</h3>
     <p>Chegamos ao último elemento da nossa discussão, que é a lista de verificação. Essa funcionalidade faz parte do
       Markdown avançado e também é suportada pelo GitHub Flavored Markdown. Para criar uma lista de verificação, basta
@@ -329,6 +466,26 @@
       marcada, e <strong class="bg-dark px-2 rounded text-orange">- [x]</strong>para criar uma caixa de seleção marcada.
     </p>
 
+    <div class="container border border-roxo">
+      <div class="row text-left" style="min-height: 300px;">
+        <div class="col border border-roxo bg-dark">
+          <p>- [ ] Desmarcado <br>- [x] Verificado</p>
+        </div>
+        <div class="col border border-roxo bg-smoky">
+          <ul class="list-unstyled">
+            <li>
+              <input type="checkbox" name="checkbox1" id="checkbox1" />
+              <label for="checkbox1">Desmarcado</label>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox2" id="checkbox2" checked />
+              <label for="checkbox2">Verificado</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <h2 class="degrade">Conclusão</h2>
     <p>Em termos de potencial, o Markdown realmente não conhece limites, pois não apenas capacita os usuários a dominar
       facilmente a arte do estilo de texto, permitindo que eles destaquem, coloquem em itálico ou negrito conteúdo
@@ -336,22 +493,6 @@
       de listas, tabelas, inserção de imagens ou hiperlinks, incorporação contínua de blocos de código e muito mais,
       transformando a experiência geral de edição de texto em uma experiência incrivelmente versátil e rica.
     </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="border border-roxo rounded bg-smoky my-4 py-4">
       <p class="text-white pb-3">
