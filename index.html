@@ -33,13 +33,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- Google tag manager(gtag.js) -->
+<!-- Este script carrega o Google Tag Manager, que é uma plataforma que permite gerenciar tags de rastreamento de terceiros, como o Google Analytics. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X537NV62CX"></script>
+
+<!-- Este script é um código de rastreamento do Google Analytics. Serve para coletar informações sobre os visitantes de um site, as páginas que eles visitam, o tempo que passam no site e as ações que realizam. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-X537NV62CX');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-X537NV62CX');
 </script>
 
 <body class="bg-black">
@@ -132,14 +134,25 @@
     </nav>
   </footer>
 
+  <!-- Carrega a biblioteca Font Awesome de fontawesome.com para funcionar os icones de redes sociais -->
   <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
 
+  <!-- Carrega a biblioteca jQuery v3.5.1, minificada e compactada, do CDN do jQuery. -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
 
+  <!-- Carrega o Popper.js v1.16.1, minificado e compactado, do CDN do Popper.js. -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
 
-  <!-- JS particulas no fundo -->
+  <!-- Carrega o principal arquivo JavaScript do Bootstrap v4.6.2, minificado e compactado, do CDN do Bootstrap. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+
+  <!-- scripts JS para carregar as particulas no fundo da página -->
   <script src="js/particles.js-master/particles.js-master/particles.js"></script>
   <script src="js/particles.js-master/particles.js-master/demo/js/app.js"></script>
 </body>
