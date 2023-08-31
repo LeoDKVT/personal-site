@@ -155,6 +155,24 @@
     </nav>
   </footer>
 
+  <!--teste de script-->
+  <script>
+    // Create a worker object
+    const worker = new Worker("worker.js");
+
+    // Send a message to the worker
+    worker.postMessage({
+      message: "Hello, worker!",
+    });
+
+    // Listen for messages from the worker
+    worker.onmessage = function (event) {
+      console.log(event.data);
+    };
+  </script>
+  <script src="js/worker.js"></script>
+
+
   <!-- Carrega a biblioteca Font Awesome de fontawesome.com para funcionar os icones de redes sociais -->
   <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
 
