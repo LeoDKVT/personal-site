@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 20px;
 }
 
-.redesocial #whatsapp {
+.redesocial #instagram {
   margin-right: 0px;
 }
 
@@ -119,6 +119,10 @@ body::-webkit-scrollbar-thumb {
 
 .redesocial #whatsapp i:hover {
   color: #25D366;
+}
+
+.redesocial #instagram i:hover {
+  color: #F56040;
 }
 
 /* foto de fundo da pagina contato.html */
