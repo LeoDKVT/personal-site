@@ -67,26 +67,24 @@ body::-webkit-scrollbar-thumb {
   transition: 0.2s;
 }
 
-/* texto digitando do arquivo "contato.html" */
-.msg {
-  width: 146px;
-  animation: digitando 2.0s steps(25), blink 0.5s infinite alternate;
-  white-space: nowrap;
+/* video de fundo da parte entre em contato */
+#bg-quote-video {
+  position: relative;
   overflow: hidden;
-  border-right: 3px solid;
-  font-size: 2em;
 }
 
-@keyframes digitando {
-  from {
-    width: 0px;
-  }
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@keyframes blink {
-  50% {
-    border-color: #63084D;
-  }
+.content {
+  position: relative;
+  z-index: 1;
 }
 
 /* footer do site */
@@ -128,20 +126,6 @@ body::-webkit-scrollbar-thumb {
 .redesocial #youtube i:hover {
   color: #c4302b;
 }
-
-/* foto de fundo da pagina contato.html */
-#bg-quote {
-  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/pagina-contato/universo.webp);
-  background-position: center center;
-  background-size: cover;
-}
-
-@media (min-width: 400px) {
-  #bg-quote {
-    background-attachment: fixed;
-  }
-}
-
 
 /* 
     codigo do blog verificar

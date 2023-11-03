@@ -77,35 +77,44 @@
         </nav>
     </header>
 
-    <section id="bg-quote" class="container-fluid text-center py-5">
-        <blockquote class="blockquote py-5 ">
-            <h1 class="display-3 degrade mt-5 mb-4 pb-2"><em>“Um dos meus dias mais produtivos foi quando eu joguei fora
-                    1000
-                    linhas de código.”</em></h1>
-            <footer class="blockquote-footer text-white mb-5">Ken Thompson</footer>
-        </blockquote>
+    <section id="bg-quote-video" class="container-fluid d-flex align-items-center py-4">
+        <div id="contato" class="container text-center">
+            <video autoplay muted loop id="video-bg">
+                <source src="./video/pagina-contato/universe-video4.mp4" type="video/mp4">
+                <!-- Fallback para navegadores que não suportam o formato do vídeo -->
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="content">
+                <blockquote class="blockquote py-5 ">
+                    <h1 class="display-3 degrade mt-5 mb-4 pb-2">
+                        “Um dos meus dias mais produtivos foi quando eu joguei
+                        fora 1000 linhas de código.”
+                    </h1>
+                    <footer class="blockquote-footer text-white mb-5">Ken Thompson</footer>
+                </blockquote>
+            </div>
+        </div>
     </section>
 
-    <section class="container">
-        <div style="max-width: 780px;">
-            <div class="my-5">
-                <h2 class="msg degrade">CONTATO</h2>
-            </div>
+    <section class="container-fluid text-center py-4">
+        <div class="my-5">
+            <h2 class="msg degrade text-center">CONTATO</h2>
         </div>
 
         <div class="row">
-            <div class="col-6 mb-5">
+            <div class="col-lg-4 col-sm-6 mb-3">
                 <h3 class="degrade1">TELEFONE</h3>
                 <p class="text-white mb-5">+55 11 93927-5748</p>
-
-                <h3 class="degrade1">E-MAIL</h3>
-                <p class="text-white mb-5">leodkvt@gmail.com</p>
-
-                <h3 class="degrade1">RESIDO</h3>
-                <p class="text-white">São Paulo - SP</p>
             </div>
 
-            <div class="redesocial col-md-6">
+            <div class="col-lg-4 col-sm-6 mb-3">
+
+                <h3 class="degrade1">E-MAIL</h3>
+                <p class="text-white sm-5">leodkvt@gmail.com</p>
+            </div>
+
+            <div class="redesocial col-lg-4 col-md-12 mb-3">
                 <h3 class="degrade1">REDE SOCIAL</h3>
                 <a id="gmail" href="mailto:leodkvt@gmail.com" target="blank" aria-label="link do meu e-mail"> <i
                         class="fa-regular fa-envelope text-white"></i></a>
@@ -115,7 +124,9 @@
                         class="fa-brands fa-github text-white"></i></a>
                 <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5511939275748" target="blank"
                     aria-label="link do meu Whatsapp para contato"> <i
-                        class="fa-brands fa-whatsapp text-white mb-3"></i></a>
+                        class="fa-brands fa-whatsapp text-white "></i></a>
+                <a id="youtube" href="https://www.youtube.com/@TechCisne/videos" target="blank"
+                    aria-label="link do meu canal do Youtube"> <i class="fa-brands fa-youtube text-white"></i></a>
             </div>
         </div>
     </section>
