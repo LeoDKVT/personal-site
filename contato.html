@@ -98,14 +98,39 @@
     </section>
 
     <section class="container-fluid text-center lead py-4">
-        <div class="my-5">
-            <h2 class="msg degrade text-center mb-4">CONTATO</h2>
-            <p class="text-white">Sua comunicação é muito importante para mim, e estou
-                ansioso para ouvir o que você tem a dizer. Se por acaso ocorrer alguma dúvida, sugestão, interesse em
-                contratar algum serviço, proposta de parceria ou simplesmente quiser bater um papo, fique à vontade para
-                entrar em contato. Utilize uma das alternativas abaixo para se comunicar comigo. Prometo responder o
-                mais rápido possível. Obrigado por visitar o meu site.</p>
+        <h2 class="msg degrade text-center mb-4">ENTRE EM CONTATO</h2>
+
+        <p class="text-white">Sua comunicação é muito importante para mim, e estou
+            ansioso para ouvir o que você tem a dizer. Se por acaso ocorrer alguma dúvida, sugestão, interesse
+            em contratar algum serviço, proposta de parceria ou simplesmente quiser bater um papo, fique à
+            vontade para entrar em contato. Utilize uma das alternativas abaixo para se comunicar comigo.
+            Prometo responder o mais rápido possível. Obrigado por visitar o meu site.
+        </p>
+
+
+        <div class="my-5 ">
+            <form action="https://formsubmit.co/ajax/leodkvt@gmail.com" method="POST" data-form>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" required></textarea>
+                </div>
+                <button type="submit" data-button class="btn btn-primary px-5">Enviar</button>
+            </form>
+            
+
+
         </div>
+
+
+
 
         <div class="row">
             <div class="col-lg-4 col-sm-6 mb-3">
@@ -134,6 +159,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Arquivo de formulario com algumas configurações -->
+    <script defer src="js/formulario.js"></script>
 
     <!-- Carrega a biblioteca Font Awesome de fontawesome.com para funcionar os icones de redes sociais -->
     <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
