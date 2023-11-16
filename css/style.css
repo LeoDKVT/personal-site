@@ -245,10 +245,82 @@ textarea {
   border-radius: 20px
 }
 
+.border-roxo {
+  border: 2px solid #63084d;
+  border-radius: 20px
+}
+
 .bg-roxinho {
   background-color: #2F0425;
 }
 
+
+
+
 .bg-roxo {
   background-color: #2F0425;
 }
+
+
+
+
+.bg-info {
+  background-color: #fcb045;
+}
+
+.bg-black {
+  background-color: #070707;
+}
+
+.bg-danger {
+  background-color: #bcbcbc;
+}
+
+
+.bg-smoky {
+  background-color: #101010;
+}
+
+
+.bg-violet {
+  background-color: #aa4df1;
+}
+
+.bg-orange {
+  background-color: #d67e36;
+}
+
+
+
+
+
+
+
+
+.text-infoo {
+  color: #fcb045;
+}
+
+.bg-black {
+  background-color: #070707;
+}
+
+.bg-danger {
+  background-color: #bcbcbc;
+}
+
+
+.bg-smoky {
+  background-color: #101010;
+}
+
+
+.bg-violet {
+  background-color: #aa4df1;
+}
+
+.bg-orange {
+  background-color: #d67e36;
+}
+
+
