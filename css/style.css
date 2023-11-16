@@ -4,13 +4,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #63084d;
+  background-image: linear-gradient(to bottom, #F49867, #63084d);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 10px;
-  border: 2px solid #63084d;
+  background-color: #070707;
+  border: 1px solid #63084d;
 }
 
 /* degrade dos textos */
@@ -98,7 +97,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .redesocial i {
-  color: #63084d;
+  color: rgb(255, 255, 255);
   font-size: 40px;
   transition-duration: 0.3s;
 }
@@ -154,7 +153,6 @@ pre {
 /* particulas */
 #particles-js {
   position: fixed;
-  margin-top: 90px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -208,4 +206,45 @@ textarea {
 
 .error {
   color: #c71610;
+}
+
+
+
+
+
+/* degrade dos textos */
+.degrade-primary {
+  background-image: linear-gradient(to right, #F49867, #5912AB);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.degrade-secondary {
+  background-image: linear-gradient(#fcb045, #63084d);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.bg-footer {
+  background-image: linear-gradient(to bottom,  #2F0425, #070707);
+}
+
+.border-orange {
+  border: 2px solid #F49867;
+  border-radius: 20px
+}
+
+.bg-roxinho {
+  background-color: #2F0425;
 }
