@@ -1,3 +1,7 @@
+body {
+  background-color: #070707;
+}
+
 /* barra de navegação personalizada */
 body::-webkit-scrollbar {
   width: 12px;
