@@ -13,21 +13,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* degrade dos textos */
-.degrade {
-  background-image: linear-gradient(to bottom, #ff0077, #692c7e);
+.degrade-primary {
+  background-image: linear-gradient(to right, #F49867, #5912AB);
   color: black;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.degrade1 {
-  background-image: linear-gradient(#fcb045, #63084d);
+.degrade-secondary {
+  background-image: linear-gradient(#F49867, #63084d);
   color: black;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+
+
+
+
 
 /* ano fixo do arquivo portfolio.html */
 .ano {
@@ -145,9 +151,12 @@ pre {
   margin: auto;
 }
 
-/* borda da página cv */
-.border-sm {
-  border: 4px solid;
+.btn-blog {
+  background-color: #2F0425;
+}
+
+.btn-blog:hover {
+  background-color: #F49867;
 }
 
 /* particulas */
@@ -212,25 +221,7 @@ textarea {
 
 
 
-/* degrade dos textos */
-.degrade-primary {
-  background-image: linear-gradient(to right, #F49867, #5912AB);
-  color: black;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-
-
-
-.degrade-secondary {
-  background-image: linear-gradient(#fcb045, #63084d);
-  color: black;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 
 
@@ -245,32 +236,26 @@ textarea {
   border-radius: 20px
 }
 
-.border-roxo {
-  border: 2px solid #63084d;
-  border-radius: 20px
+.border-violet {
+  border: 2px solid #2F0425;
 }
 
-.bg-roxinho {
+.bg-violet {
   background-color: #2F0425;
 }
 
+.text-orange {
+  color: #F49867;
+}
 
-
-
-.bg-roxo {
-  background-color: #2F0425;
+.text-purple {
+  color: #5912AB;
 }
 
 
 
 
-.bg-info {
-  background-color: #fcb045;
-}
 
-.bg-black {
-  background-color: #070707;
-}
 
 .bg-danger {
   background-color: #bcbcbc;
@@ -282,13 +267,6 @@ textarea {
 }
 
 
-.bg-violet {
-  background-color: #aa4df1;
-}
-
-.bg-orange {
-  background-color: #d67e36;
-}
 
 
 
@@ -296,31 +274,5 @@ textarea {
 
 
 
-
-.text-infoo {
-  color: #fcb045;
-}
-
-.bg-black {
-  background-color: #070707;
-}
-
-.bg-danger {
-  background-color: #bcbcbc;
-}
-
-
-.bg-smoky {
-  background-color: #101010;
-}
-
-
-.bg-violet {
-  background-color: #aa4df1;
-}
-
-.bg-orange {
-  background-color: #d67e36;
-}
 
 

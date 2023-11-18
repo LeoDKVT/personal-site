@@ -81,12 +81,12 @@
   </header>
 
   <section class="container-lg text-center text-white px-1 lead">
-    <h1 class="display-3 degrade1 mt-5 pb-1">Publique seu projeto React no Github Pages utilizando Vite</h1>
-    <p class="font-italic text-orange mb-5 font-italic">Criado em 04 de Maio de 2023</p>
-    <h2 class="degrade mt-4 pb-2">Iniciando o deploy com o github pages</h2>
-    <p>No arquivo “<strong class="text-info">vite.config.js</strong>” adicionar o comando “<strong
-        class="text-info">base</strong>” de acordo com o nome do seu <strong>repositório</strong> do github por exemplo:
-      “<strong class="text-info">https://github.com/LeoDKVT/gpt-page</strong>”.</p>
+    <h1 class="display-3 degrade-secondary mt-5 pb-1">Publique seu projeto React no Github Pages utilizando Vite</h1>
+    <p class="font-italic text-orange mb-5">Criado em 04 de Maio de 2023</p>
+    <h2 class="degrade-primary mt-4 pb-2">Iniciando o deploy com o github pages</h2>
+    <p>No arquivo “<strong class="text-orange">vite.config.js</strong>” adicionar o comando “<strong
+        class="text-orange">base</strong>” de acordo com o nome do seu <strong>repositório</strong> do github por exemplo:
+      “<strong class="text-orange">https://github.com/LeoDKVT/gpt-page</strong>”.</p>
     <div class="caixa">
       <pre class="sombra">
           <code class="user-select-all">  <span class="text-violet">import</span> { <span class="text-primary">defineConfig</span> } <span class="text-violet">from</span> <span class="text-orange">"vite"</span>;
@@ -100,10 +100,10 @@
         </pre>
     </div>
     <p>Feito isso, basta subir seu projeto para o github caso você tenha feito localmente.</p>
-    <p>No seu repositório do github, iremos em <strong class="text-info">settings</strong> → <strong
-        class="text-info">pages</strong> → “<strong class="text-info">Build and deployment</strong>” trocar para
-      “<strong class="text-info">github actions</strong>” e na pasta “<strong class="text-info">Static HTML</strong>”
-      colar o arquivo “<strong class="text-info">yml</strong>” da documentação Vite.</p>
+    <p>No seu repositório do github, iremos em <strong class="text-orange">settings</strong> → <strong
+        class="text-orange">pages</strong> → “<strong class="text-orange">Build and deployment</strong>” trocar para
+      “<strong class="text-orange">github actions</strong>” e na pasta “<strong class="text-orange">Static HTML</strong>”
+      colar o arquivo “<strong class="text-orange">yml</strong>” da documentação Vite.</p>
     <p>Segue o link da documentação contendo o código yml: <a href="https://vitejs.dev/guide/static-deploy.html"
         rel="nofollow" target="_blank">https://vitejs.dev/guide/static-deploy.html</a> </p>
     <p>Código yml:</p>
@@ -163,37 +163,37 @@
           </code>
         </pre>
     </div>
-    <p>Após colar esse arquivo, basta clicar em “<strong class="text-info">commit changes</strong>”, será criado um
-      arquivo chamado "<strong class="text-info">static.yml</strong>" graças a ele será possivel gerar o link https do
+    <p>Após colar esse arquivo, basta clicar em “<strong class="text-orange">commit changes</strong>”, será criado um
+      arquivo chamado "<strong class="text-orange">static.yml</strong>" graças a ele será possivel gerar o link https do
       github pages.</p>
     <p>Para observar o layout das pastas no repositório, <a href="https://github.com/LeoDKVT/gpt-page" rel="nofollow"
         target="_blank">clique aqui.</a></p>
-    <h3 class="degrade mt-4 pb-2">Qual vantagem tem fazendo o deploy dessa forma?</h3>
+    <h3 class="degrade-primary mt-4 pb-2">Qual vantagem tem fazendo o deploy dessa forma?</h3>
     <p>Empregar este método de implantação específico apresenta uma variedade de vantagens importantes, já que ele é
       muito simples e não requer a instalação de qualquer dependência como o "npm gh-pages".</p>
-    <h3 class="degrade mt-4 pb-2">Qual é o processo para atualizar o aplicativo depois de ser modificado?</h3>
+    <h3 class="degrade-primary mt-4 pb-2">Qual é o processo para atualizar o aplicativo depois de ser modificado?</h3>
     <p>O Github atualizará automaticamente o projeto assim que ele for carregado. Para verificar o processo, acesse
       "actions" e confira o commit e o status. Mas fique atento: se houver algum erro de código, o projeto não
       funcionará.</p>
-    <h3 class="degrade mt-4 pb-2">Dica:</h3>
+    <h3 class="degrade-primary mt-4 pb-2">Dica:</h3>
     <p>Caso você seja novato em React e esteja buscando aprender a fazer o deploy, aconselho começar um projeto Vite do
       zero e testá-lo para garantir que nenhum erro afete a estrutura básica. Assim, você poderá praticar de um jeito
       seguro e eficaz.</p>
-    <h3 class="degrade mt-4 pb-2">Comandos úteis:</h3>
+    <h3 class="degrade-primary mt-4 pb-2">Comandos úteis:</h3>
     <p>Ao acionar este comando, um arquivo chamado "dist" será criado como a página estática.</p>
     <div class="caixa">
       <pre class="sombra">
-          <code class="user-select-all"><span class="text-info">npm</span> run build </code>
+          <code class="user-select-all"><span class="text-orange">npm</span> run build </code>
         </pre>
     </div>
     <p>E para ver essa página estática basta rodar esse comando para ver esse projeto em produção:</p>
     <div class="caixa">
       <pre class="sombra">
-          <code class="user-select-all"><span class="text-info">npm</span> run preview </code>
+          <code class="user-select-all"><span class="text-orange">npm</span> run preview </code>
         </pre>
     </div>
 
-    <div class="border-roxo rounded bg-smoky my-4 py-4">
+    <div class="border-violet rounded bg-smoky my-4 py-4">
       <p class="text-white pb-3">
         Olá 👋! Se você gostou deste blog, por favor, ajude a divulgá-lo para que mais pessoas possam acessá-lo. <br>
         Você pode compartilhá-lo nas seguintes plataformas:
@@ -237,7 +237,7 @@
     </div>
 
     <a href="../blog">
-      <button type="button" class="btn text-white bg-roxo mb-2">Voltar ao Blog</button>
+      <button type="button" class="btn text-white btn-blog mb-2">Voltar ao Blog</button>
     </a>
   </section>
 
