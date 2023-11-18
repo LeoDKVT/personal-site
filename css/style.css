@@ -283,3 +283,15 @@ textarea {
 .link-hover:hover {
   color: #F49867;
 }
+
+
+
+
+
+
+/* foto de fundo da pagina contato.html */
+#bg-leo {
+  background-image: url(../img/home/fundo.svg);
+  background-position: center top;
+  background-size: cover;
+}
