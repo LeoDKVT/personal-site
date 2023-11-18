@@ -12,6 +12,38 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #63084d;
 }
 
+/* textos personalizados */
+.text-orange {
+  color: #F49867;
+}
+
+.text-purple {
+  color: #5912AB;
+}
+
+/* background personalizados */
+.bg-violet {
+  background-color: #2F0425;
+}
+
+.bg-smoky {
+  background-color: #070707;
+}
+
+.bg-degrade {
+  background-image: linear-gradient(to bottom,  #2F0425, #070707);
+}
+
+/* bordas personalizados */
+.border-orange {
+  border: 2px solid #F49867;
+  border-radius: 20px
+}
+
+.border-violet {
+  border: 2px solid #2F0425;
+}
+
 /* degrade dos textos */
 .degrade-primary {
   background-image: linear-gradient(to right, #F49867, #5912AB);
@@ -60,11 +92,22 @@ body::-webkit-scrollbar-thumb {
   color: #bcbcbc;
 }
 
-/* dropdown do arquivo portfolio.html */
-.dropdown-divider {
-  margin-top: 20px;
-  border-top: 1px solid #424141;
+
+
+
+.border-gradient {
+  margin: auto;
+  border: 1px solid transparent; /* Torna a borda transparente para que o gradiente seja visível */
+  border-image: linear-gradient(to right, #F49867, #5912AB); /* Gradiente da esquerda para a direita de vermelho para azul */
+  border-image-slice: 1; /* Define a largura da fatia do gradiente */
 }
+
+
+
+
+
+
+
 
 /* box-shadow do arquivo blog.html */
 .sombra:hover {
@@ -91,6 +134,9 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 1;
 }
+
+
+
 
 /* footer do site */
 .redesocial a {
@@ -171,6 +217,10 @@ pre {
 }
 
 
+
+
+/* formulario contato verificar */
+
 input,
 textarea {
   width: 100%;
@@ -225,54 +275,11 @@ textarea {
 
 
 
-
-
-.bg-footer {
-  background-image: linear-gradient(to bottom,  #2F0425, #070707);
+.link-hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.border-orange {
-  border: 2px solid #F49867;
-  border-radius: 20px
-}
-
-.border-violet {
-  border: 2px solid #2F0425;
-}
-
-.bg-violet {
-  background-color: #2F0425;
-}
-
-.text-orange {
+.link-hover:hover {
   color: #F49867;
 }
-
-.text-purple {
-  color: #5912AB;
-}
-
-
-
-
-
-
-.bg-danger {
-  background-color: #bcbcbc;
-}
-
-
-.bg-smoky {
-  background-color: #101010;
-}
-
-
-
-
-
-
-
-
-
-
-
