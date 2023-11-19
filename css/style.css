@@ -319,3 +319,14 @@ textarea {
 
 
 
+.btn-degrade {
+  background-image: linear-gradient(to right, #f49867, #5912ab);
+  border: none;
+}
+
+.btn-degrade:hover {
+  background-image: linear-gradient(to right, #5912ab, #f49867);
+}
+
+
+
