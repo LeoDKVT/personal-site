@@ -15,6 +15,10 @@ p {
   font-weight: 300;
 }
 
+
+
+
+
 /* barra de navegação personalizada */
 body::-webkit-scrollbar {
   width: 12px;
@@ -309,13 +313,6 @@ textarea {
 /* foto de fundo da pagina contato.html */
 #bg-leo {
   background-image: url(../img/home/fundo.svg);
-  background-position: center top;
-  background-size: cover;
-}
-
-/* foto de fundo da pagina contato.html */
-#bg-legal {
-  background-image: url(../img/home/zzz.svg);
   background-position: center top;
   background-size: cover;
 }
