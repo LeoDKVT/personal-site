@@ -60,67 +60,72 @@
   <!--
     <div id="particles-js"></div>
   -->
-  
 
 
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="img/leo-logo.svg" style="width: 195px; height: 50px;" alt="José Leonardo Dev Front-end">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Abrir Navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio">Portfólio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato">Contato</a>
-            </li>
-          </ul>
+
+  <div id="bg-leo" class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="img/leo-logo.svg" style="width: 195px; height: 50px;" alt="José Leonardo Dev Front-end">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Abrir Navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio">Portfólio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <Section class="container my-5">
+      <div class="row align-items-center ">
+        <div class="col-md-6">
+          <h1 class="display-2">Desenvolvedor <strong class="degrade-primary">Web</strong> & <strong
+              class="degrade-primary">Designer</strong></h1>
+          <p>Olá, meu nome é José Leonardo e minha paixão pelo desenvolvimento web me impulsiona a criar experiências
+            únicas. Dedico-me ao Front-end e busco construir websites que vão além do comum, unindo um design criativo e
+            uma funcionalidade perfeita.</p>
+          <button type="button" class="btn btn-secondary"><a class="text-white text-decoration-none"
+              href="https://drive.google.com/file/d/1vnIe5bbyoDagiVt6fbojGdXPxANRpkG4/view" target="blank">Minha
+              CV</a></button>
+        </div>
+        <div class="col-md-6">
+          <!--
+            <img class="img-fluid" src="img/home/cavera2.webp" style="width: 500px; height: 644px;" alt="">
+          -->
+          <img class="img-fluid d-block d-md-none" src="img/home/cavera-222222.webp" alt="Imagem para dispositivos móveis">
+          <img class="img-fluid d-none d-md-block d-lg-none" src="img/home/cavera-222222.webp" alt="Imagem para tablets">
+          <img class="img-fluid d-none d-lg-block" src="img/home/snapedi.webp" alt="Imagem para desktops">
         </div>
       </div>
-    </nav>
-  </header>
-
-  <Section class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h1 class="display-3">Desenvolvedor <strong class="degrade-primary">Web</strong> & <strong
-            class="degrade-primary">Designer</strong></h1>
-        <p>Olá, meu nome é José Leonardo e minha paixão pelo desenvolvimento web me impulsiona a criar experiências
-          únicas. Dedico-me ao Front-end e busco construir websites que vão além do comum, unindo um design criativo e
-          uma funcionalidade perfeita.</p>
-        <button type="button" class="btn btn-secondary"><a class="text-white text-decoration-none"
-            href="https://drive.google.com/file/d/1vnIe5bbyoDagiVt6fbojGdXPxANRpkG4/view" target="blank">Minha
-            CV</a></button>
-      </div>
-
-      <div class="col-md-6">
-        <img class="img-fluid" src="img/home/cavera2.webp" style="width: 500px; height: 644px;" alt="">
-      </div>
-    </div>
-  </Section>
+    </Section>
+  </div>
 
   <section class="container bg-degrade border-orange py-5">
     <div class="row">
       <div class="col-md-6 mb-4">
-        <h2 class="degrade-primary">Minhas habilidades</h2>
+        <h2 class=" degrade-primary">Minhas habilidades</h2>
         <p>Veja minhas principais habilidades no desenvolvimento web, que me permitem realizar todas as etapas, desde o
           planejamento do design e realizar a criação de um wireframe até a conclusão da codificação.</p>
       </div>
       <div class="col-md-6 mb-4">
-        <h3>Design para a Web</h3>
+        <h3 class="display-5 degrade-primary">Design para a Web</h3>
         <p>Ao iniciar minha jornada de estudo no desenvolvimento web, concentrei-me principalmente nos fundamentos de
           design. Empregando as melhores práticas da indústria, concentro-me na otimização da aparência e usabilidade
           das páginas, garantindo que cada imagem e elemento contribuam para um desempenho excepcional. Minha intenção é
@@ -184,7 +189,8 @@
       </a>
       <a class="text-decoration-none" href="https://www.linkedin.com/in/jose-leonardo-dev-front-end/"
         target="blank"><img src="../img/rede-social/linkedin.svg" class="img-fluid m-2" data-toggle="tooltip"
-          data-placement="top" aria-label="link do meu Linkedin" style="width: 50px; height: 50px;" alt="logo linkedin" />
+          data-placement="top" aria-label="link do meu Linkedin" style="width: 50px; height: 50px;"
+          alt="logo linkedin" />
       </a>
       <a class="text-decoration-none" href="https://github.com/LeoDKVT" target="blank"><img
           src="../img/rede-social/github.svg" class="img-fluid m-2" data-toggle="tooltip" data-placement="top"

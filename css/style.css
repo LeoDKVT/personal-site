@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 body {
-  background-color: #ebf467;
+  background-color: #070707;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
 /* barra de navegação personalizada */
@@ -299,3 +312,13 @@ textarea {
   background-position: center top;
   background-size: cover;
 }
+
+/* foto de fundo da pagina contato.html */
+#bg-legal {
+  background-image: url(../img/home/zzz.svg);
+  background-position: center top;
+  background-size: cover;
+}
+
+
+
