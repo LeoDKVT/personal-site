@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 
 body {
   background-color: #070707;
 }
 
-h1, h2, h3, h4, h5, h6  {
-  font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
-
-
-
-
 
 /* barra de navegação personalizada */
 body::-webkit-scrollbar {
@@ -25,7 +26,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-image: linear-gradient(to bottom, #F49867, #63084d);
+  background-image: linear-gradient(to bottom, #f49867, #63084d);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -35,16 +36,16 @@ body::-webkit-scrollbar-thumb {
 
 /* textos personalizados */
 .text-orange {
-  color: #F49867;
+  color: #f49867;
 }
 
 .text-purple {
-  color: #5912AB;
+  color: #5912ab;
 }
 
 /* background personalizados */
 .bg-violet {
-  background-color: #2F0425;
+  background-color: #2f0425;
 }
 
 .bg-smoky {
@@ -52,22 +53,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-degrade {
-  background-image: linear-gradient(to bottom,  #2F0425, #070707);
+  background-image: linear-gradient(to bottom, #2f0425, #070707);
 }
 
 /* bordas personalizados */
 .border-orange {
-  border: 2px solid #F49867;
-  border-radius: 20px
+  border: 2px solid #f49867;
+  border-radius: 20px;
 }
 
 .border-violet {
-  border: 2px solid #2F0425;
+  border: 2px solid #2f0425;
 }
 
 /* degrade dos textos */
 .degrade-primary {
-  background-image: linear-gradient(to right, #F49867, #5912AB);
+  background-image: linear-gradient(to right, #f49867, #5912ab);
   color: black;
   background-clip: text;
   -webkit-background-clip: text;
@@ -75,18 +76,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .degrade-secondary {
-  background-image: linear-gradient(#F49867, #63084d);
+  background-image: linear-gradient(#f49867, #63084d);
   color: black;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-
 
 /* ano fixo do arquivo portfolio.html */
 .ano {
@@ -113,22 +108,16 @@ body::-webkit-scrollbar-thumb {
   color: #bcbcbc;
 }
 
-
-
-
 .border-gradient {
   margin: auto;
   border: 1px solid transparent; /* Torna a borda transparente para que o gradiente seja visível */
-  border-image: linear-gradient(to right, #F49867, #5912AB); /* Gradiente da esquerda para a direita de vermelho para azul */
+  border-image: linear-gradient(
+    to right,
+    #f49867,
+    #5912ab
+  ); /* Gradiente da esquerda para a direita de vermelho para azul */
   border-image-slice: 1; /* Define a largura da fatia do gradiente */
 }
-
-
-
-
-
-
-
 
 /* box-shadow do arquivo blog.html */
 .sombra:hover {
@@ -155,9 +144,6 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 1;
 }
-
-
-
 
 /* footer do site */
 .redesocial a {
@@ -219,11 +205,11 @@ pre {
 }
 
 .btn-blog {
-  background-color: #2F0425;
+  background-color: #2f0425;
 }
 
 .btn-blog:hover {
-  background-color: #F49867;
+  background-color: #f49867;
 }
 
 /* particulas */
@@ -236,9 +222,6 @@ pre {
   min-height: 100vh;
   z-index: -2;
 }
-
-
-
 
 /* formulario contato verificar */
 
@@ -288,27 +271,14 @@ textarea {
   color: #c71610;
 }
 
-
-
-
-
-
-
-
-
 .link-hover {
   color: #ffffff;
   text-decoration: none;
 }
 
 .link-hover:hover {
-  color: #F49867;
+  color: #f49867;
 }
-
-
-
-
-
 
 /* foto de fundo da pagina contato.html */
 #bg-leo {
@@ -316,8 +286,6 @@ textarea {
   background-position: center top;
   background-size: cover;
 }
-
-
 
 .btn-degrade {
   background-image: linear-gradient(to right, #f49867, #5912ab);
@@ -328,5 +296,28 @@ textarea {
   background-image: linear-gradient(to right, #5912ab, #f49867);
 }
 
+/* Media query para telas menores, como smartphones */
+@media screen and (max-width: 767px) {
+  #foda {
+    background-image: url(../img/home/aii.svg);
+    background-position: center top;
+    background-size: cover;
+  }
+}
 
+/* Media query para tablets e telas médias */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  #foda {
+    background-image: url(../img/home/celu.svg);
+    background-position: center top;
+    background-size: cover;  }
+}
 
+/* Media query para telas maiores, como desktops */
+@media screen and (min-width: 991px) {
+  #foda {
+    background-image: url(../img/home/fundo.svg);
+    background-position: center top;
+    background-size: cover;
+  }
+}
