@@ -303,6 +303,15 @@ textarea {
     background-position: center top;
     background-size: cover;
   }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+  
+  .btn-degrade {
+    margin: auto;
+    display: block;    
+  }
 }
 
 /* Media query para tablets e telas médias */
