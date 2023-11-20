@@ -66,6 +66,18 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #2f0425;
 }
 
+/* Bordas usada no footer */
+.border-gradient {
+  margin: auto;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #f49867,
+    #5912ab
+  );
+  border-image-slice: 1;
+}
+
 /* degrade dos textos */
 .degrade-primary {
   background-image: linear-gradient(to right, #f49867, #5912ab);
@@ -108,24 +120,13 @@ body::-webkit-scrollbar-thumb {
   color: #bcbcbc;
 }
 
-.border-gradient {
-  margin: auto;
-  border: 1px solid transparent; /* Torna a borda transparente para que o gradiente seja visível */
-  border-image: linear-gradient(
-    to right,
-    #f49867,
-    #5912ab
-  ); /* Gradiente da esquerda para a direita de vermelho para azul */
-  border-image-slice: 1; /* Define a largura da fatia do gradiente */
-}
-
 /* box-shadow do arquivo blog.html */
 .sombra:hover {
   box-shadow: 0px 0px 8px 2px #63084cbe;
   transition: 0.2s;
 }
 
-/* video de fundo da parte entre em contato */
+/* video de fundo da página de contato */
 #bg-quote-video {
   position: relative;
   overflow: hidden;
@@ -145,49 +146,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
 }
 
-/* footer do site */
-.redesocial a {
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-.redesocial #youtube {
-  margin-right: 0px;
-}
-
-.redesocial i {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  transition-duration: 0.3s;
-}
-
-.redesocial #gmail i:hover {
-  color: #c71610;
-}
-
-.redesocial #linkedin i:hover {
-  color: #0e76a8;
-}
-
-.redesocial #github i:hover {
-  color: #fff;
-}
-
-.redesocial #whatsapp i:hover {
-  color: #25d366;
-}
-
-.redesocial #instagram i:hover {
-  color: #f56040;
-}
-
-.redesocial #youtube i:hover {
-  color: #c4302b;
-}
-
-/* 
-    codigo do blog verificar
-*/
+/* codigo do blog markdown e meu nome constando... */
 pre {
   background-color: #101010;
   border: 1px solid #63084d;
@@ -199,11 +158,13 @@ pre {
   text-align: left;
 }
 
+/* conteúdo do blog */
 .caixa {
   max-width: 1000px;
   margin: auto;
 }
 
+/* botão voltar ao blog */
 .btn-blog {
   background-color: #2f0425;
 }
@@ -223,8 +184,50 @@ pre {
   z-index: -2;
 }
 
-/* formulario contato verificar */
+/* Media query */
+/* Media query para telas menores, como smartphones */
+@media screen and (max-width: 767px) {
+  #fundo-body {
+    background-image: url(../img/home/blue-mobile.svg);
+    background-position: center top;
+    background-size: cover;
+  }
 
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: center;
+  }
+
+  .btn-degrade {
+    margin: auto;
+    display: block;
+  }
+}
+
+/* Media query para tablets e telas médias */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #fundo-body {
+    background-image: url(../img/home/orange-tablet.svg);
+    background-position: center top;
+    background-size: cover;
+  }
+}
+
+/* Media query para telas maiores, como desktops */
+@media screen and (min-width: 992px) {
+  #fundo-body {
+    background-image: url(../img/home/violet-desktop.svg);
+    background-position: center top;
+    background-size: cover;
+  }
+}
+
+
+
+
+/* formulario contato verificar */
 input,
 textarea {
   width: 100%;
@@ -294,39 +297,4 @@ textarea {
 
 .btn-degrade:hover {
   background-image: linear-gradient(to right, #5912ab, #f49867);
-}
-
-/* Media query para telas menores, como smartphones */
-@media screen and (max-width: 767px) {
-  #foda {
-    background-image: url(../img/home/aii.svg);
-    background-position: center top;
-    background-size: cover;
-  }
-
-  h1, h2, h3, p {
-    text-align: center;
-  }
-  
-  .btn-degrade {
-    margin: auto;
-    display: block;    
-  }
-}
-
-/* Media query para tablets e telas médias */
-@media screen and (min-width: 768px) and (max-width: 990px) {
-  #foda {
-    background-image: url(../img/home/celu.svg);
-    background-position: center top;
-    background-size: cover;  }
-}
-
-/* Media query para telas maiores, como desktops */
-@media screen and (min-width: 991px) {
-  #foda {
-    background-image: url(../img/home/fundo.svg);
-    background-position: center top;
-    background-size: cover;
-  }
 }
