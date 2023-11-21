@@ -272,56 +272,6 @@ pre {
 
 
 
-
-
-/* formulario contato verificar 
-input,
-textarea {
-  width: 100%;
-  padding: 1.25rem;
-}
-
-input,
-textarea {
-  margin-bottom: 1rem;
-  color: white;
-  background: #323644;
-  border: 0.125rem solid transparent;
-  border-radius: 1.125rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-  outline: none;
-  border-color: #63084d;
-}
-
-textarea {
-  min-height: 12.5rem;
-  resize: vertical;
-}
-
-.success,
-.error {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.success {
-  color: #63084d;
-  text-align: center;
-}
-
-.error {
-  color: #c71610;
-}
-*/
-
 .link-hover {
   color: #ffffff;
   text-decoration: none;
