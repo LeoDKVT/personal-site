@@ -186,24 +186,24 @@ pre {
 
   p {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   h1 {
     text-align: center;
-    font-size: 2.6em;
+    font-size: 2.4em;
     font-weight: bold;
   }
 
   h2 {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: bold;
   }
 
   h3 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 
@@ -272,7 +272,9 @@ pre {
 
 
 
-/* formulario contato verificar */
+
+
+/* formulario contato verificar 
 input,
 textarea {
   width: 100%;
@@ -318,6 +320,7 @@ textarea {
 .error {
   color: #c71610;
 }
+*/
 
 .link-hover {
   color: #ffffff;
