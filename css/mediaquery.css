@@ -1,0 +1,115 @@
+/* Media query para telas menores, como smartphones */
+@media screen and (max-width: 767px) {
+  #fundo-body {
+    background-image: url(../img/home/blue-mobile.svg);
+    background-position: center top;
+    background-size: cover;
+  }
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bold;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .btn-degrade {
+    margin: auto;
+    display: block;
+  }
+  .risco:before {
+    display: none;
+  }
+}
+
+/* Media query para tablets e telas médias */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #fundo-body {
+    background-image: url(../img/home/orange-tablet.svg);
+    background-position: center top;
+    background-size: cover;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+
+/* Media query para telas maiores, como desktops */
+@media screen and (min-width: 992px) {
+  #fundo-body {
+    background-image: url(../img/home/violet-desktop.svg);
+    background-position: center top;
+    background-size: cover;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+.link-hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.link-hover:hover {
+  color: #f49867;
+}
+
+/* foto de fundo da pagina contato.html */
+#bg-leo {
+  background-image: url(../img/home/fundo.svg);
+  background-position: center top;
+  background-size: cover;
+}
+.btn-degrade {
+  background-image: linear-gradient(to right, #f49867, #5912ab);
+  border: none;
+}
+.btn-degrade:hover {
+  background-image: linear-gradient(to right, #5912ab, #f49867);
+}
