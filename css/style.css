@@ -3,9 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Raleway:wght@300&display=swap');
 */
 
+@font-face {
+  font-family: 'Raleway-light';
+  src: url(../fonts/Raleway-Light.ttf);
+}
+
 body {
   background-color: #070707;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway-light', sans-serif;
 }
 
 /* barra de navegação personalizada */
