@@ -6,6 +6,7 @@
 @font-face {
   font-family: 'Raleway-light';
   src: url(../fonts/Raleway-Light.ttf);
+  font-display: block;
 }
 
 body {
@@ -25,6 +26,28 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #070707;
   border: 1px solid #63084d;
+}
+
+/*botão para o topo*/
+#btnTopo {
+  display: none;
+  position: fixed;
+  color: white;
+  background-color: #63084d;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnTopo:hover {
+  background-color: #f49867;
+  transition: 0.5s;
 }
 
 /* textos personalizados */

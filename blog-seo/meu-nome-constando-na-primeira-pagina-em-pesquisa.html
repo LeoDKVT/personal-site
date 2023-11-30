@@ -262,7 +262,27 @@
         <div class="border-gradient" style="max-width: 960px;"></div>
 
         <p class="mb-0 py-4">© 2023 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
+        <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
     </footer>
+
+    <!--Botão para voltar ao topo do site-->
+    <script>
+        window.onscroll = function () { mostrarBotaoTopo() };
+
+        function mostrarBotaoTopo() {
+            var btnTopo = document.getElementById("btnTopo");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        }
+
+        function voltarAoTopo() {
+            document.body.scrollTop = 0; // Para navegadores Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
 
     <!-- Carrega o CDN Popper.js v2.11.8, minificado e compactado. -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

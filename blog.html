@@ -141,8 +141,7 @@
               é servir como um guia para os buscadores, simplificando o acesso
               a essas páginas e arquivos.
             </p>
-            <a href="blog-seo/sitemap"
-              class="text-decoration-none stretched-link link-orange"><strong>continue
+            <a href="blog-seo/sitemap" class="text-decoration-none stretched-link link-orange"><strong>continue
                 lendo</strong></a>
           </div>
         </div>
@@ -161,8 +160,7 @@
               Nesse artigo listei as tag description, keywords e robots e suas
               funcionalidades e como utilizar da melhor forma possível.
             </p>
-            <a href="blog-seo/meta-tag"
-              class="text-decoration-none stretched-link link-orange"><strong>continue
+            <a href="blog-seo/meta-tag" class="text-decoration-none stretched-link link-orange"><strong>continue
                 lendo</strong></a>
           </div>
         </div>
@@ -187,8 +185,7 @@
               hospedar um projeto React utilizando o Vite e o GitHub Pages sem
               nenhum custo.
             </p>
-            <a href="blog-react/deploy-vite"
-              class="text-decoration-none stretched-link link-orange"><strong>continue
+            <a href="blog-react/deploy-vite" class="text-decoration-none stretched-link link-orange"><strong>continue
                 lendo</strong></a>
           </div>
         </div>
@@ -225,8 +222,7 @@
               Veja os principais comandos do Markdown e desfrute de todas as opções e facilidades disponíveis para a
               formatação e organização de seu conteúdo.
             </p>
-            <a href="blog-markdown/markdown"
-              class="text-decoration-none stretched-link link-orange"><strong>continue
+            <a href="blog-markdown/markdown" class="text-decoration-none stretched-link link-orange"><strong>continue
                 lendo</strong></a>
           </div>
         </div>
@@ -282,7 +278,27 @@
     <div class="border-gradient" style="max-width: 960px;"></div>
 
     <p class="mb-0 py-4">© 2023 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
+    <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
   </footer>
+
+  <!--Botão para voltar ao topo do site-->
+  <script>
+    window.onscroll = function () { mostrarBotaoTopo() };
+
+    function mostrarBotaoTopo() {
+      var btnTopo = document.getElementById("btnTopo");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+    }
+
+    function voltarAoTopo() {
+      document.body.scrollTop = 0; // Para navegadores Safari
+      document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+    }
+  </script>
 
   <!-- Carrega o CDN Popper.js v2.11.8, minificado e compactado. -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

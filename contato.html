@@ -187,7 +187,27 @@
                         style="font-size: 40px; margin: 0px 10px;"></i></a>
             </div>
         </div>
+        <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
     </section>
+
+    <!--Botão para voltar ao topo do site-->
+    <script>
+        window.onscroll = function () { mostrarBotaoTopo() };
+
+        function mostrarBotaoTopo() {
+            var btnTopo = document.getElementById("btnTopo");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        }
+
+        function voltarAoTopo() {
+            document.body.scrollTop = 0; // Para navegadores Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
 
     <!-- Arquivo de formulario com algumas configurações -->
     <script defer src="js/formulario.js"></script>
