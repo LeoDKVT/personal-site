@@ -46,6 +46,10 @@
 
   <!-- Especifica a versão original da página inicial -->
   <link rel="canonical" href="https://leodkvt.com.br/">
+
+  <!-- Css do efeito de animação AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <!-- Este script carrega o Google Tag Manager, que é uma plataforma que permite gerenciar tags de rastreamento de terceiros, como o Google Analytics. -->
@@ -119,12 +123,12 @@
 
   <section class="container bg-degrade text-white border-orange py-5">
     <div class="row">
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <h2 class="degrade-primary risco">Minhas habilidades</h2>
         <p>Veja minhas principais habilidades no desenvolvimento web, que me permitem realizar todas as etapas, desde o
           planejamento do design e realizar a criação de um wireframe até a conclusão da codificação.</p>
       </div>
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <h3 class="degrade-primary risco">Design para a Web</h3>
         <p>Ao iniciar minha jornada de estudo no desenvolvimento web, concentrei-me principalmente nos fundamentos de
           design. Empregando as melhores práticas da indústria, concentro-me na otimização da aparência e usabilidade
@@ -132,7 +136,7 @@
           desenvolver uma experiência de usuário que seja fácil de usar, intuitiva e memorável.</p>
       </div>
 
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <h3 class="degrade-primary risco">Criação de Interfaces Web Responsivas e Otimizadas</h3>
         <p>Estou totalmente preparado para criar interfaces web excepcionais e responsivas que deixarão uma impressão
           agradável para os visitantes. Minha capacidade abrange desde a aquisição de domínios personalizados até a
@@ -140,7 +144,7 @@
           detalhes se estende à otimização de desempenho, navegação intuitiva e a integração perfeita de
           funcionalidades, visando oferecer a melhor experiência ao usuário.</p>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <h3 class="degrade-primary risco">Otimização para Mecanismos de Busca (SEO)</h3>
         <p>Possuo conhecimentos em otimização para mecanismos de busca(SEO), tenho a capacidade de criar sites
           cuidadosamente projetados para atingir um alto desempenho nas pesquisas do Google, aumentando assim sua
@@ -148,7 +152,7 @@
           posicionar os sites de maneira eficaz nos resultados de busca, permitindo que você alcance seu público-alvo de
           forma mais eficiente.</p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <h3 class="degrade-primary risco">Inteligência Artificial no Desenvolvimento Web</h3>
         <p>Mergulhei em pesquisas e implementações de ferramentas com inteligência artificial para elevar ainda mais o
           meu trabalho no desenvolvimento web. Desde a otimização de imagens até a criação de logotipos e elementos
@@ -160,7 +164,7 @@
   </section>
 
   <section class="container text-center my-4">
-    <h2 class="degrade-primary py-2">Ferramentas e tecnologias que estou constantemente estudando e utilizando:</h2>
+    <h2 class="degrade-primary py-2" data-aos="zoom-in" data-aos-duration="1000">Ferramentas e tecnologias que estou constantemente estudando e utilizando:</h2>
     <img class="my-4 mx-2" src="img/html5.svg" style="width: 72px; height: 70px;" alt="logo do html5">
     <img class="my-4 mx-2" src="img/css3.svg" style="width: 72px; height: 70px;" alt="logo do css3">
     <img class="my-4 mx-2" src="img/javascript.svg" style="width: 72px; height: 70px;" alt="logo do javascript">
@@ -233,7 +237,7 @@
     <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
   </footer>
 
-  <!--Botão para voltar ao topo do site-->
+  <!-- Botão para voltar ao topo do site -->
   <script>
     window.onscroll = function () { mostrarBotaoTopo() };
 
@@ -252,6 +256,14 @@
       document.body.scrollTop = 0; // Para navegadores Safari
       document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
     }
+  </script>
+
+  <!-- Adiciona animações AOS em Javascript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Inicialização das animações AOS -->
+  <script>
+    AOS.init();
   </script>
 
   <!-- Carrega o CDN Popper.js v2.11.8, minificado e compactado. -->
