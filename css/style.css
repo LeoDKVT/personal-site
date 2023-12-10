@@ -121,9 +121,10 @@ body::-webkit-scrollbar-thumb {
 .ano {
   position: sticky;
   top: 0;
-  z-index: 1;
-  height: 54px;
+  z-index: 2;
+  height: 70px;
   margin: 40px 0px;
+  padding-top: 10px;
   background-color: #070707;
 }
 
