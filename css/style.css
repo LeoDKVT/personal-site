@@ -117,21 +117,6 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 4px;
 }
 
-/* ano fixo do arquivo portfolio.html */
-.ano {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  height: 70px;
-  margin: 40px 0px;
-  padding-top: 10px;
-  background-color: #070707;
-}
-
-.font-ano {
-  font-size: 2.4em;
-}
-
 /* box-shadow do arquivo portfolio/blog */
 .sombra:hover {
   box-shadow: 0px 0px 8px 2px #63084cbe;
