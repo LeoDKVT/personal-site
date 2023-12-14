@@ -118,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* box-shadow do arquivo portfolio/blog */
-.sombra:hover {
+.sombra {
   box-shadow: 0px 0px 8px 2px #63084cbe;
   transition: 0.2s;
 }
