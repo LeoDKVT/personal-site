@@ -215,5 +215,6 @@ pre {
 }
 
 .link-orange:hover {
-  color:#5912ab
+  color: #f17837;
+  transition: 0.2s;
 }
