@@ -794,6 +794,22 @@
         }
     </script>
 
+    <!-- Impede o arrastar e soltar e o clique com botão direito -->
+    <script>
+        // Seleciona todas as imagens na página
+        const images = document.querySelectorAll('img');
+
+        // Aplica os eventos ondragstart e oncontextmenu a todas as imagens
+        images.forEach(function (img) {
+            img.ondragstart = function () {
+                return false; // Impede o arrastar da imagem
+            };
+            img.oncontextmenu = function () {
+                return false; // Impede o menu de contexto (botão direito)
+            };
+        });
+    </script>
+
     <!-- Adiciona animações AOS em Javascript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
