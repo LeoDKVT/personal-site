@@ -268,9 +268,28 @@
     <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
   </footer>
 
+  <!-- Desativa o clique com o botão direito -->
   <script>
     document.addEventListener('contextmenu', function (e) {
-      e.preventDefault();
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- Impede o arrastar e soltar e o clique com botão direito -->
+  <script>
+    // Seleciona todas as imagens na página
+    const images = document.querySelectorAll('img');
+
+    // Aplica os eventos ondragstart e oncontextmenu a todas as imagens
+    images.forEach(function (img) {
+      img.ondragstart = function () {
+        return false; // Impede o arrastar da imagem
+      };
+      img.oncontextmenu = function () {
+        return false; // Impede o menu de contexto (botão direito)
+      };
     });
   </script>
 
