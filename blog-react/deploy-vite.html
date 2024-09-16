@@ -294,7 +294,7 @@
 
     <div class="border-gradient" style="max-width: 960px;"></div>
 
-    <p class="mb-0 py-4">© 2023 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
+    <p class="mb-0 py-4">© 2024 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
     <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
   </footer>
 
@@ -317,6 +317,22 @@
       document.body.scrollTop = 0; // Para navegadores Safari
       document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
     }
+  </script>
+
+  <!-- Desabilita as funcionalidades de arrastar e soltar e o botão direito clicar -->
+  <script>
+    // Seleciona todas as imagens na página
+    const images = document.querySelectorAll('img');
+
+    // Aplica os eventos ondragstart e oncontextmenu a todas as imagens
+    images.forEach(function (img) {
+      img.ondragstart = function () {
+        return false; // Impede o arrastar da imagem
+      };
+      img.oncontextmenu = function () {
+        return false; // Impede o menu de contexto (botão direito)
+      };
+    });
   </script>
 
   <!-- Carrega o CDN Popper.js v2.11.8, minificado e compactado. -->

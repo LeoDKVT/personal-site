@@ -54,8 +54,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="../">
-                    <img src="../img/logo.svg" style="width: 180px; height: 50px;"
-                        alt="José Leonardo Dev Front-end">
+                    <img src="../img/logo.svg" style="width: 180px; height: 50px;" alt="José Leonardo Dev Front-end">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Abrir Navegação">
@@ -262,7 +261,7 @@
 
         <div class="border-gradient" style="max-width: 960px;"></div>
 
-        <p class="mb-0 py-4">© 2023 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
+        <p class="mb-0 py-4">© 2024 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
         <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
     </footer>
 
@@ -285,6 +284,22 @@
             document.body.scrollTop = 0; // Para navegadores Safari
             document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
         }
+    </script>
+
+    <!-- Desabilita as funcionalidades de arrastar e soltar e o botão direito clicar -->
+    <script>
+        // Seleciona todas as imagens na página
+        const images = document.querySelectorAll('img');
+
+        // Aplica os eventos ondragstart e oncontextmenu a todas as imagens
+        images.forEach(function (img) {
+            img.ondragstart = function () {
+                return false; // Impede o arrastar da imagem
+            };
+            img.oncontextmenu = function () {
+                return false; // Impede o menu de contexto (botão direito)
+            };
+        });
     </script>
 
     <!-- Carrega o CDN Popper.js v2.11.8, minificado e compactado. -->

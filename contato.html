@@ -172,8 +172,8 @@
             </div>
             <div class="col-lg-4 col-sm-6 mb-3">
                 <h3 class="degrade-secondary">E-MAIL</h3>
-                <p><strong><a class="text-decoration-none text-white" href="mailto:contato@leodkvt.com.br" target="blank"
-                            aria-label="link do meu e-mail">contato@leodkvt.com.br</a></strong></p>
+                <p><strong><a class="text-decoration-none text-white" href="mailto:contato@leodkvt.com.br"
+                            target="blank" aria-label="link do meu e-mail">contato@leodkvt.com.br</a></strong></p>
             </div>
             <div class="redesocial col-lg-4 col-md-12">
                 <h3 class="degrade-secondary">REDES SOCIAIS</a></h3>
@@ -215,6 +215,22 @@
             document.body.scrollTop = 0; // Para navegadores Safari
             document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
         }
+    </script>
+
+    <!-- Desabilita as funcionalidades de arrastar e soltar e o botão direito clicar -->
+    <script>
+        // Seleciona todas as imagens na página
+        const images = document.querySelectorAll('img');
+
+        // Aplica os eventos ondragstart e oncontextmenu a todas as imagens
+        images.forEach(function (img) {
+            img.ondragstart = function () {
+                return false; // Impede o arrastar da imagem
+            };
+            img.oncontextmenu = function () {
+                return false; // Impede o menu de contexto (botão direito)
+            };
+        });
     </script>
 
     <!-- Arquivo de formulario com algumas configurações -->

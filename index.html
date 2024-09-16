@@ -264,20 +264,11 @@
 
     <div class="border-gradient" style="max-width: 960px;"></div>
 
-    <p class="mb-0 py-4">© 2023 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
+    <p class="mb-0 py-4">© 2024 Desenvolvido por José Leonardo. Todos os direitos reservados.</p>
     <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo">↑</button>
   </footer>
 
-  <!-- Desativa o clique com o botão direito -->
-  <script>
-    document.addEventListener('contextmenu', function (e) {
-      if (e.target.tagName === 'IMG') {
-        e.preventDefault();
-      }
-    });
-  </script>
-
-  <!-- Impede o arrastar e soltar e o clique com botão direito -->
+  <!-- Desabilita as funcionalidades de arrastar e soltar e o botão direito clicar -->
   <script>
     // Seleciona todas as imagens na página
     const images = document.querySelectorAll('img');
