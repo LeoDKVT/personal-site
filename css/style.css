@@ -18,7 +18,7 @@ body {
 
 @font-face {
   font-family: 'Raleway-light';
-  src: url(../fonts/Raleway-Light.ttf);
+  src: url(../fonts/Raleway-Light.woff2);
   font-display: block;
 }
 
